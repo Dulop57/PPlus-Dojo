@@ -2,6 +2,7 @@
 <p align="center">
   <img src="Images/logo_dojo.png" alt="Project Plus Dojo!" width="200">
 </p>
+
 ## What is P+ Dojo?
 
 It's a resource hub to check and learn all about Project+ frame data and hitboxes. The sections made so far includes:
