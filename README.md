@@ -1,7 +1,17 @@
 # P+ Dojo
 
-Project+ reference and FSRS flashcard study app, with a React/TypeScript frontend,
-Three.js collision viewer, optional Firebase account sync, and an Electron
+## What is P+ Dojo?
+
+Is a resource hub to check and learn all about Project+ frame data and hitboxes. The sections made so far includes:
+- All the frame data and a 3D viewer for all the animations and hitboxes.
+- Interactive charts comparing the stats of all the fighters.
+- Stage viewer for comparing each stage size and layout (work in progress).
+- Study section with a spaced repetition algorithm, similar to Anki, where you can learn and be tested on everything on the site.
+- A compendium where you can see what you've learned so far and what's left. With optional save on the cloud.
+
+## How does it work?
+
+React/TypeScript frontend, Three.js collision viewer, optional Firebase account sync, and an Electron
 Windows app.
 
 - [Website](https://pplus-dojo.pages.dev/)
