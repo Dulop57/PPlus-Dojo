@@ -1,4 +1,7 @@
 # P+ Dojo
+<p align="center">
+  <img src="Images/logo_dojo.png" alt="Project Plus Dojo!">
+</p>
 
 ## What is P+ Dojo?
 
