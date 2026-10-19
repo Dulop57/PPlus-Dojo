@@ -2,7 +2,7 @@
 
 ## What is P+ Dojo?
 
-Is a resource hub to check and learn all about Project+ frame data and hitboxes. The sections made so far includes:
+It's a resource hub to check and learn all about Project+ frame data and hitboxes. The sections made so far includes:
 - All the frame data and a 3D viewer for all the animations and hitboxes.
 - Interactive charts comparing the stats of all the fighters.
 - Stage viewer for comparing each stage size and layout (work in progress).
