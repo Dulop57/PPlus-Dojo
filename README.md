@@ -1,6 +1,6 @@
 # P+ Dojo
 <p align="center">
-  <img src="Images/logo_dojo.png" alt="Project Plus Dojo!" width="600">
+  <img src="Images/logo_dojo.png" alt="Project Plus Dojo!" width="300">
 </p>
 
 ## What is P+ Dojo?
