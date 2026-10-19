@@ -9,6 +9,14 @@ It's a resource hub to check and learn all about Project+ frame data and hitboxe
 - Study section with a spaced repetition algorithm, similar to Anki, where you can learn and be tested on everything on the site.
 - A compendium where you can see what you've learned so far and what's left. With optional save on the cloud.
 
+## Why?
+
+I originally wanted to study frame data using Anki, but then I realized that, thanks to all the amazing tools and spreadsheets the community has created for this game, I could put together a package that makes everything easy to access and study!
+
+I wanted to share it so everyone could benefit from it!
+
+I'd really appreciate any feedback! And remember, this is still a work in progress, so there might be some errors or missing information. Any help is more than welcome!
+
 ## How does it work?
 
 React/TypeScript frontend, Three.js collision viewer, optional Firebase account sync, and an Electron
