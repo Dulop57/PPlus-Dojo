@@ -1,4 +1,4 @@
-# P+ Dojo
+# P+ Dojo!
 <p align="center">
   <img src="Images/logo_dojo.png" alt="Project Plus Dojo!" width="200">
 </p>
