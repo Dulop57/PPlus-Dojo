@@ -23,13 +23,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 React/React DOM, Three.js, fflate, and ts-fsrs: MIT. The Study section uses ts-fsrs by the Open Spaced Repetition project (https://github.com/open-spaced-repetition/ts-fsrs), an independent implementation of FSRS; it does not embed Anki. Lucide: ISC; portions of the inherited icon set carry MIT attribution. Inter and Space Grotesk: SIL Open Font License 1.1. Full notices are bundled under `app/licenses` (or `dist/licenses`) by the build helper. Version pins and transitive dependencies are recorded in package-lock.json.
 
 Raw game inputs, 3D models, and game audio are excluded from source publication.
-The source tree does include fighter portraits, stock icons, stage images, and
-Project+ logos under `Images/`, along with derived app icons. These are
-third-party artwork and branding, separate from the MIT-licensed application
-code. Their redistribution permissions have not been verified by this project's
-source-publication audit. Preserve applicable upstream credits and permissions;
-the MIT license does not grant rights to that content or imply affiliation with
-Nintendo or Project+.
+
+## Images
+
+The fighter portraits, stock icons, and stage images under `Images/` were
+obtained from the [Project+ pages on Dragdown Wiki](https://dragdown.wiki/wiki/PPlus).
+Dragdown's wiki text is licensed under CC BY-SA 4.0 unless otherwise noted, but
+that site-wide text license does not establish a license for game images. For
+example, the [Mario portrait file page](https://dragdown.wiki/wiki/File:PPlus_Mario_Portrait.png)
+has a separate copyright and fair-use notice. File histories record uploaders;
+an uploader is not necessarily the original artist.
+
+The retained Project+ logo credit record is at
+`Images/project-plus-assets-master/logos/credits.md`. Individual artist credits
+and redistribution permissions for the fighter, stock, stage, and logo artwork
+have not been verified. This source attribution records where the images were
+collected; it does not grant permission to redistribute them. These assets are
+separate from the MIT-licensed application code and do not imply affiliation
+with Nintendo, Project+, or Dragdown. See [Dragdown's copyright notice](https://dragdown.wiki/wiki/Dragdown:Copyrights)
+and the relevant file pages before reusing the images.
 
 ## Desktop and cloud libraries
 

@@ -112,8 +112,11 @@ Application code is under the [MIT license](LICENSE). Preserve
 Extraction follows [Rukaidata](https://github.com/rukai/rukaidata) and
 [brawllib_rs](https://github.com/rukai/brawllib_rs) by Lucas Kent (Rukai).
 
-Fighter/stage artwork and Project+ branding have separate rights; this project's
-MIT license does not grant rights to those assets. Their redistribution
-permissions have not been verified. Retained upstream logo credits are in
-[the artwork credits](Images/project-plus-assets-master/logos/credits.md).
+Fighter portraits, stock icons, and stage images were sourced from the
+[Dragdown P+ Wiki](https://dragdown.wiki/wiki/PPlus). The wiki file pages provide
+source histories and copyright notes, but their text license does not establish
+reuse rights for game images. Those permissions and individual artist credits
+have not been verified. The MIT license applies to application code, not this
+artwork or Project+ branding. See [third-party notices](THIRD-PARTY-NOTICES.md)
+and [the retained logo credits](Images/project-plus-assets-master/logos/credits.md).
 P+ Dojo is an independent project.
