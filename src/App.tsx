@@ -271,6 +271,5 @@ function About(){return <article className="document-page about-page">
     <p>Game data extraction: Lucas Kent (Rukai), Rukaidata, and brawllib_rs. Their MIT notices are included in THIRD-PARTY-NOTICES.md.</p>
     <p>Attributes: OrangeChris, Iris Flower, and the contributors to the P+ Attributes document. Study scheduling uses ts-fsrs, an MIT-licensed implementation of FSRS.</p>
     <p>Calculators: MAWWWK’s ASDI down template; Strong Bad’s knockback calculator; Connor’s Project+ update; and Magus420’s formulas and stale-move information. Thanks to Iris Flower for maintaining the spreadsheet.</p>
-    <p>P+ Dojo is made by Dulop, thanks to the efforts of the amazing P+ Community</p>
   </section>
 </article>;}
