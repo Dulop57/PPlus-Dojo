@@ -1,0 +1,57 @@
+node_modules/
+dist/
+dist-sandbox/
+dist-web/
+artifacts/
+target/
+.tools/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.pac
+*.pcs
+*.gct
+*.GCT
+*.iso
+*.wbfs
+inputs/
+Game Files/
+public/data/*
+!public/data/.gitkeep
+public/study/
+desktop.config.json
+.env.local
+firebase-debug.log
+
+# Local service state, credentials, and environment overrides
+.wrangler/
+.firebase/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+*service-account*.json
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+*.log
+
+# Editable design originals; runtime images remain available
+*.psd
+*.aep
+*.zip
+__pycache__/
+*.py[cod]
+
+# Owner notes and unused upstream art stay on this machine
+/docs/
+/design-qa.md
+/Images/logo_p+.png
+/Images/project-plus-assets-master/**
+!/Images/project-plus-assets-master/logos/
+!/Images/project-plus-assets-master/logos/credits.md
+!/Images/project-plus-assets-master/logos/v3/
+!/Images/project-plus-assets-master/logos/v3/long.png

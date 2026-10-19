@@ -1,0 +1,3619 @@
+{
+  "source": "changes to frames.xlsx",
+  "sha256": "c4b2ba10f74fdf3f6cce355de0994309383bfbef424a1d93ebe82cf45ca0be0a",
+  "sheet": "Sheet1",
+  "fighters": {
+    "bowser": {
+      "AttackS4S": {
+        "sha256": "d6276f0822bca7412eea3b84e883f4b227c2583196e34406925ccfd6a5f69181",
+        "family": "S4",
+        "active": [
+          [
+            31,
+            34
+          ]
+        ],
+        "actionable": 67,
+        "cells": "B3:C3",
+        "dependencies": {
+          "AttackS4Start": "da2ff48e02397010c46cb0941f34879054aa8083dcfc9a9643a753079b5bf649"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "bcf35f4116e476bb9d12a93494c3d7a5a5859e75354b88fd15f7958207c3588d",
+        "family": "S4",
+        "active": [
+          [
+            31,
+            34
+          ]
+        ],
+        "actionable": 67,
+        "cells": "B3:C3",
+        "dependencies": {
+          "AttackS4Start": "da2ff48e02397010c46cb0941f34879054aa8083dcfc9a9643a753079b5bf649"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "aae2cf3ace59cac3e54dbeb60eaf5777fc392ae8df19e5f9d5780748c0a377d6",
+        "family": "S4",
+        "active": [
+          [
+            31,
+            34
+          ]
+        ],
+        "actionable": 67,
+        "cells": "B3:C3",
+        "dependencies": {
+          "AttackS4Start": "da2ff48e02397010c46cb0941f34879054aa8083dcfc9a9643a753079b5bf649"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "4fd99b4a435d8dcc9e1fa8ab2fd0e465d6efe5cf9b07fac1ca56bcb87e870f89",
+        "family": "Hi4",
+        "active": [
+          [
+            13,
+            18
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "actionable": 48,
+        "cells": "D3:E3",
+        "dependencies": {
+          "AttackHi4Start": "2f7db6e5aa1e6dff9c9b87f727ef0ab18873d0103c0ed80ece992c60fb769cac"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "f6e6e084436787f1c18804cdc428f78e92931f26f9cc27deced7601117b05b5c",
+        "family": "Lw4",
+        "active": [
+          [
+            8,
+            9
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "actionable": 57,
+        "cells": "F3:G3",
+        "dependencies": {
+          "AttackLw4Start": "932309c81be70d1432cb01e518a336279072fe10024f39e3fe51c01cb373ea02"
+        }
+      }
+    },
+    "captain-falcon": {
+      "AttackS4Hi": {
+        "sha256": "934916a1692e4886e15498abb3df519fb8c01eda796f4417637e90c2d2aab47d",
+        "family": "S4",
+        "active": [
+          [
+            18,
+            20
+          ]
+        ],
+        "actionable": 60,
+        "cells": "B4:C4",
+        "dependencies": {
+          "AttackS4Start": "adfa6ce208e13762f99a326aeabaac5b065414735d05232d488352f21fd1cd05"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "498998df705c09f11ed6e48368799d09cf694f42c2b0900facb16f76dcc23233",
+        "family": "S4",
+        "active": [
+          [
+            18,
+            20
+          ]
+        ],
+        "actionable": 60,
+        "cells": "B4:C4",
+        "dependencies": {
+          "AttackS4Start": "adfa6ce208e13762f99a326aeabaac5b065414735d05232d488352f21fd1cd05"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "12dc9216cd10a1e8f08fa9c73af05f8bbd022d878757862e759fac7c59c7d162",
+        "family": "S4",
+        "active": [
+          [
+            18,
+            20
+          ]
+        ],
+        "actionable": 60,
+        "cells": "B4:C4",
+        "dependencies": {
+          "AttackS4Start": "adfa6ce208e13762f99a326aeabaac5b065414735d05232d488352f21fd1cd05"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "80a44d1282f36ce66be54a0547d1cc552333675c0fe91adedd0322845994cf45",
+        "family": "Hi4",
+        "active": [
+          [
+            21,
+            22
+          ],
+          [
+            27,
+            28
+          ]
+        ],
+        "actionable": 40,
+        "cells": "D4:E4",
+        "dependencies": {
+          "AttackHi4Start": "60e632dd3e2e46a77b989cbd46474efbca1121edb0d38cab1616975a8411dd8f"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "40dc100540c0c7f854d5f18c6f784e2b0c20b4afd340506368099e2ae3928d65",
+        "family": "Lw4",
+        "active": [
+          [
+            19,
+            22
+          ],
+          [
+            29,
+            31
+          ]
+        ],
+        "actionable": 44,
+        "cells": "F4:G4",
+        "dependencies": {
+          "AttackLw4Start": "cefd05cdd2a4049183def3eb077505e21235c4b3f1bd0832b4c993adc36b567f"
+        }
+      }
+    },
+    "charizard": {
+      "AttackS4S": {
+        "sha256": "28eee07dad17f7c96832d433af5a249d3a480bfca31af4802557928e2aaff1b3",
+        "family": "S4",
+        "active": [
+          [
+            20,
+            25
+          ]
+        ],
+        "actionable": 64,
+        "cells": "B5:C5",
+        "dependencies": {
+          "AttackS4Start": "3214792874844e9a8d372bf5834987360ee3dc365c2d8403c9d7148502a6ee8d"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "875e1d2ef5c1ea6def4b71d0c31bd30d96cb6f6c93b306189d6f78b9d2abc739",
+        "family": "S4",
+        "active": [
+          [
+            20,
+            25
+          ]
+        ],
+        "actionable": 64,
+        "cells": "B5:C5",
+        "dependencies": {
+          "AttackS4Start": "3214792874844e9a8d372bf5834987360ee3dc365c2d8403c9d7148502a6ee8d"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "9a698dc3780f209ef18c1b0ec27d5ab6211d094decd3adf5da34d7732fde6610",
+        "family": "S4",
+        "active": [
+          [
+            20,
+            25
+          ]
+        ],
+        "actionable": 64,
+        "cells": "B5:C5",
+        "dependencies": {
+          "AttackS4Start": "3214792874844e9a8d372bf5834987360ee3dc365c2d8403c9d7148502a6ee8d"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "79f9f5822fc02933f2c4364f1efa26bd04bcc58b777261c45ac433bdb449dfcb",
+        "family": "Hi4",
+        "active": [
+          [
+            5,
+            9
+          ],
+          [
+            14,
+            19
+          ]
+        ],
+        "actionable": 47,
+        "cells": "D5:E5",
+        "dependencies": {
+          "AttackHi4Start": "6d36291877fa6fceeedf30faf40086f0b863ddd825594edfd8e27e33484e0d13"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "ece09a0f3d924c2a4218647fad30c84090582892e0aeefb0b40d08bf8eda655d",
+        "family": "Lw4",
+        "active": [
+          [
+            14,
+            18
+          ]
+        ],
+        "actionable": 65,
+        "cells": "F5:G5",
+        "dependencies": {
+          "AttackLw4Start": "675cd1e62086433b079302dac9a0ccd9a9432cabca3b47cf5bc3c6a60a9a4bc1"
+        }
+      }
+    },
+    "king-dedede": {
+      "AttackS4S": {
+        "sha256": "afb54d6ada71cea2307e1133a77a545af79806a8b4237b30dbfe47fc2e588f66",
+        "family": "S4",
+        "active": [
+          [
+            37,
+            45
+          ]
+        ],
+        "actionable": 77,
+        "cells": "B6:C6",
+        "dependencies": {
+          "AttackS4Start": "5cd680f59a91da6b939c76a32b6ec939924429244a29614cb89fd1104d38b312"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "99ef009c064994df5104b690d319a523321db8a7e1d3a30c7f6fbf47d38c2e6b",
+        "family": "S4",
+        "active": [
+          [
+            37,
+            45
+          ]
+        ],
+        "actionable": 77,
+        "cells": "B6:C6",
+        "dependencies": {
+          "AttackS4Start": "5cd680f59a91da6b939c76a32b6ec939924429244a29614cb89fd1104d38b312"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "bc4c0e2e9c875a688615c6625e53154754f7f0e7e3b2aa5f9cdfbd15927bb0cc",
+        "family": "S4",
+        "active": [
+          [
+            37,
+            45
+          ]
+        ],
+        "actionable": 77,
+        "cells": "B6:C6",
+        "dependencies": {
+          "AttackS4Start": "5cd680f59a91da6b939c76a32b6ec939924429244a29614cb89fd1104d38b312"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "77c0fff119ac7948f099fb7f318a702a5843ff46291546b0487698a0da7b3f20",
+        "family": "Hi4",
+        "active": [
+          [
+            17,
+            26
+          ]
+        ],
+        "actionable": 57,
+        "cells": "D6:E6",
+        "dependencies": {
+          "AttackHi4Start": "fcc5d9d8b2d68f15fecbcf2171d2f9d1cbb8be7f79c2d46ab99e775cec70eda0"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "296b7c798d7c5767b7b8411bf0dc5c2a124ea7468e9ee21c6aebdab4274ff8e9",
+        "family": "Lw4",
+        "active": [
+          [
+            14,
+            23
+          ]
+        ],
+        "actionable": 47,
+        "cells": "F6:G6",
+        "dependencies": {
+          "AttackLw4Start": "84fd83b503ba9986265c49d3bc655612875620d0bbb852f5d5ce654aad816d02"
+        }
+      }
+    },
+    "diddy-kong": {
+      "AttackS4S": {
+        "sha256": "52393f5e03988aa2926fbf9fc61e232301df2fd6d46b358d86d28c39d08c8aa1",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            15
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B7:C7",
+        "dependencies": {
+          "AttackS4Start": "a449a8263069cc08536b0873cd764330b1dc3e6c6870d5a46fd9484d3d51d56f"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "a60014fbe57919e17f50796682904396602662f1418c777064566a91d7850b16",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            15
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B7:C7",
+        "dependencies": {
+          "AttackS4Start": "a449a8263069cc08536b0873cd764330b1dc3e6c6870d5a46fd9484d3d51d56f"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "97cac6cc85a58514854c597a2fc2203967225c0da61972009b60bc24124a46ff",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            15
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B7:C7",
+        "dependencies": {
+          "AttackS4Start": "a449a8263069cc08536b0873cd764330b1dc3e6c6870d5a46fd9484d3d51d56f"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "50fd6ed21939f50c3e5d97bf460e0a6c05e35120a78f7e54ad36fd9c3d592db4",
+        "family": "Hi4",
+        "active": [
+          [
+            5,
+            9
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            19,
+            25
+          ]
+        ],
+        "actionable": 53,
+        "cells": "D7:E7",
+        "dependencies": {
+          "AttackHi4Start": "7b79519cbd5243e21b7ea404c603113f1490269409f33220101960460ef2afea"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "7aa54aa337741a0c29f28e5eca4e9a572857d0594effe6f0838d16d9a16e0768",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            7
+          ],
+          [
+            14,
+            17
+          ]
+        ],
+        "actionable": 44,
+        "cells": "F7:G7",
+        "dependencies": {
+          "AttackLw4Start": "f238cfcf793932ff1f120f2c5b4972c1b6be0bb284487a8780abc9f770c6f842"
+        }
+      }
+    },
+    "donkey-kong": {
+      "AttackS4S": {
+        "sha256": "33256db362ff9093dc50b24984f4186c2d4dbafc01e18ac4b7af1dda67b291bc",
+        "family": "S4",
+        "active": [
+          [
+            22,
+            23
+          ]
+        ],
+        "actionable": 55,
+        "cells": "B8:C8",
+        "dependencies": {
+          "AttackS4Start": "2c3651c7de25044deddf732ed416bae2d98b65432543f04c4d5efc1e6e0d1b9f"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "3f6e4cf3e521e9415aae7c098cc5f2ddc275b526a38608f81b5b45264c0bac30",
+        "family": "S4",
+        "active": [
+          [
+            22,
+            23
+          ]
+        ],
+        "actionable": 55,
+        "cells": "B8:C8",
+        "dependencies": {
+          "AttackS4Start": "2c3651c7de25044deddf732ed416bae2d98b65432543f04c4d5efc1e6e0d1b9f"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "ff4577aae8fb7013f9fa6c1d84f8c1670487e2471afd96ac28f3031aba0ba7ee",
+        "family": "S4",
+        "active": [
+          [
+            22,
+            23
+          ]
+        ],
+        "actionable": 55,
+        "cells": "B8:C8",
+        "dependencies": {
+          "AttackS4Start": "2c3651c7de25044deddf732ed416bae2d98b65432543f04c4d5efc1e6e0d1b9f"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "d9501c9f34d3afbe18d4cec76b245baffac0c03433b321ccb3bde8f63b0cb8fa",
+        "family": "Hi4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 48,
+        "cells": "D8:E8",
+        "dependencies": {
+          "AttackHi4Start": "82b4e991d7d8a9425381a17b6c7d7920de17d30260e558e02eeea26e690caf6c"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "728a84d20905207a642a6a758cb801fcab479c00e7a29857489818e7f0a9f8ba",
+        "family": "Lw4",
+        "active": [
+          [
+            10,
+            13
+          ]
+        ],
+        "actionable": 55,
+        "cells": "F8:G8",
+        "dependencies": {
+          "AttackLw4Start": "f6adc21763c4f01d50fdcd59ee023c361b6ab017b134e318a7ec58d44e4e39f4"
+        }
+      }
+    },
+    "falco": {
+      "AttackS4S": {
+        "sha256": "3c5be72bbc809e547e62050282347988764fc76133ada60c92527abca20983ec",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            21
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B9:C9",
+        "dependencies": {
+          "AttackS4Start": "155bdbebb192d527c9e88a8c93c70cf63ec9f37af5c033a53c210e5e21832311"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "4714db75937841da82730df73539ad576700545928e3accff2179329e59d9096",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            21
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B9:C9",
+        "dependencies": {
+          "AttackS4Start": "155bdbebb192d527c9e88a8c93c70cf63ec9f37af5c033a53c210e5e21832311"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "1071a45e88b6b5d6765cdb2c5d75ddee07f1d260795291181a248e1a19451556",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            21
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B9:C9",
+        "dependencies": {
+          "AttackS4Start": "155bdbebb192d527c9e88a8c93c70cf63ec9f37af5c033a53c210e5e21832311"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "b2b7e964ced60a52279c2758e0d9ef7910b67a3655de5ecd353d1d130aea103f",
+        "family": "Hi4",
+        "active": [
+          [
+            7,
+            16
+          ]
+        ],
+        "actionable": 44,
+        "cells": "D9:E9",
+        "dependencies": {
+          "AttackHi4Start": "e94b0a189ee5d4aa5c4d81147ab779d0d20e13fb43c271f882cd28d4f5162f78"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "b7b6f5015331930e7f34a1644220ff86c728f1b319dcc8e09f35ad6b0fc2c513",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            10
+          ]
+        ],
+        "actionable": 46,
+        "cells": "F9:G9",
+        "dependencies": {
+          "AttackLw4Start": "674b901c2db2101b2724e1964a8851d8f130fe1d254edf004ed4290db17e1174"
+        }
+      }
+    },
+    "fox": {
+      "AttackS4S": {
+        "sha256": "a6790fd4fb3ab01b6e6f5b0748841b3c18b00b186ab0f1018426c32a4b5dfd59",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            22
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B10:C10",
+        "dependencies": {
+          "AttackS4Start": "4c00e8bbb8ebe565fd62d2d1318c45cf03bcbcf7a765451971579213edb107dd"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "430d0afed401b25a4e24196cf7a7be6809b737b6bb2fb9864f5a76442dcc7c90",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            22
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B10:C10",
+        "dependencies": {
+          "AttackS4Start": "4c00e8bbb8ebe565fd62d2d1318c45cf03bcbcf7a765451971579213edb107dd"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "f5c01a8e1c805bfeb5f799df30355bf5837ef8df148495f9b2109f2bbecdc648",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            22
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B10:C10",
+        "dependencies": {
+          "AttackS4Start": "4c00e8bbb8ebe565fd62d2d1318c45cf03bcbcf7a765451971579213edb107dd"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "d21759f22661116b6126c9387f5727d1f85be6835f6df806562618322a93b94c",
+        "family": "Hi4",
+        "active": [
+          [
+            7,
+            16
+          ]
+        ],
+        "actionable": 42,
+        "cells": "D10:E10",
+        "dependencies": {
+          "AttackHi4Start": "20aac79a67443054be14ba43fdebe683dc9c65510d17571e7d4cd5a5eded4623"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "fee31a788f38bb25900f0a4514df54cce8eb86136b3f6a3c217952f8fd21f445",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            10
+          ]
+        ],
+        "actionable": 46,
+        "cells": "F10:G10",
+        "dependencies": {
+          "AttackLw4Start": "e7d3d4ce4415d009aa74c1453437652607f48f58ebb613498e9fd266968d5563"
+        }
+      }
+    },
+    "ganondorf": {
+      "AttackS4Hi": {
+        "sha256": "ede8f2f71daf18193998297e5943f2892bc2fd0d31bb3e60f0d443e3296eb2e5",
+        "family": "S4",
+        "active": [
+          [
+            19,
+            24
+          ]
+        ],
+        "actionable": 59,
+        "cells": "B11:C11",
+        "dependencies": {
+          "AttackS4Start": "82774b0fad256aae69766e3538637eb7fdfa36412ccd84f27054f27c7db57fbe"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "40f762d6b5192d0a6850f6fdad9da2946896e9ce60492fa8b7c7868ffec63423",
+        "family": "S4",
+        "active": [
+          [
+            19,
+            24
+          ]
+        ],
+        "actionable": 59,
+        "cells": "B11:C11",
+        "dependencies": {
+          "AttackS4Start": "82774b0fad256aae69766e3538637eb7fdfa36412ccd84f27054f27c7db57fbe"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "33e40e4ea513b45d04858446c3d22cbf37d1579afa5b6cc45ab12685993e0c78",
+        "family": "S4",
+        "active": [
+          [
+            19,
+            24
+          ]
+        ],
+        "actionable": 59,
+        "cells": "B11:C11",
+        "dependencies": {
+          "AttackS4Start": "82774b0fad256aae69766e3538637eb7fdfa36412ccd84f27054f27c7db57fbe"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "787c561efa184c29c5a39cafbd8a1dd3c556dbd498a7b128ba835078d9e0468c",
+        "family": "Hi4",
+        "active": [
+          [
+            21,
+            23
+          ],
+          [
+            26,
+            29
+          ]
+        ],
+        "actionable": 45,
+        "cells": "D11:E11",
+        "dependencies": {
+          "AttackHi4Start": "e227783d6705ce41d55fc90088a6778d2900101b5e7ee75cab3573e13c74cd9c"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "9747f6cb2862b159fa683ed53fef3024170b864d718d7b64f843b387ebccde65",
+        "family": "Lw4",
+        "active": [
+          [
+            18,
+            21
+          ],
+          [
+            28,
+            31
+          ]
+        ],
+        "actionable": 46,
+        "cells": "F11:G11",
+        "dependencies": {
+          "AttackLw4Start": "a8d7c9eeede0160396f7da0fb37375c7ab6cf51e502fa58f7d1e1b545b96c3f6"
+        }
+      }
+    },
+    "ice-climbers": {
+      "AttackS4S": {
+        "sha256": "47ee42bd9a95f84f695dfeb17fb0849a463560ca96d622fc53f289987a538712",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            15
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B12:C12",
+        "dependencies": {
+          "AttackS4Start": "a52612dd9b3db83f25b671898d5cda22173d360d5ea58ec65a6557fa37e4b5f1"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "c90bcb4737ba6e74358b0b8f5c2ea34442c4649ea335f1247b5f8f79d82cd525",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            15
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B12:C12",
+        "dependencies": {
+          "AttackS4Start": "a52612dd9b3db83f25b671898d5cda22173d360d5ea58ec65a6557fa37e4b5f1"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "dafca893bc2739401eb83acb85b992c3d026a66c0f526d7c730edd760436ff01",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            15
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B12:C12",
+        "dependencies": {
+          "AttackS4Start": "a52612dd9b3db83f25b671898d5cda22173d360d5ea58ec65a6557fa37e4b5f1"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "1fdb5dc037449affcc7090e25e7b5e76d09d14f4d090a7b55d0916350ec870dd",
+        "family": "Hi4",
+        "active": [
+          [
+            14,
+            19
+          ]
+        ],
+        "actionable": 51,
+        "cells": "D12:E12",
+        "dependencies": {
+          "AttackHi4Start": "776c0a9e49848b9cc9aae1a51dc8e2ff489e229bd58e428bcbf216e9435547e7"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "b98c2653f092e2144e3e2e28141c5063d050a0d1357119333898a9c596764998",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            11
+          ]
+        ],
+        "actionable": 38,
+        "cells": "F12:G12",
+        "dependencies": {
+          "AttackLw4Start": "4e0348f546195c42888135f986a248bce156417172fa1bda82a5734db3332f5b"
+        }
+      }
+    },
+    "ike": {
+      "AttackS4S": {
+        "sha256": "f3c8f711bee7cc04deb7544d30bfc42df098cbbb2b9af9bff9161d8478e5ff4b",
+        "family": "S4",
+        "active": [
+          [
+            30,
+            35
+          ]
+        ],
+        "actionable": 77,
+        "cells": "B13:C13",
+        "dependencies": {
+          "AttackS4Start": "3c59f4f01a8ea19e8f8cebfc4f0cfdc006cc4121eb2e550a85abbc5cbc21cb5d"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "9a99d62bc112e1eb16be4aa45da52a6bf2a3cc783ea8a51f48be639626001155",
+        "family": "S4",
+        "active": [
+          [
+            30,
+            35
+          ]
+        ],
+        "actionable": 77,
+        "cells": "B13:C13",
+        "dependencies": {
+          "AttackS4Start": "3c59f4f01a8ea19e8f8cebfc4f0cfdc006cc4121eb2e550a85abbc5cbc21cb5d"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "b112fef87d2444bf1e95df1b4d46a295ec5faf9fa4971bd21061aac51b4ead6b",
+        "family": "S4",
+        "active": [
+          [
+            30,
+            35
+          ]
+        ],
+        "actionable": 77,
+        "cells": "B13:C13",
+        "dependencies": {
+          "AttackS4Start": "3c59f4f01a8ea19e8f8cebfc4f0cfdc006cc4121eb2e550a85abbc5cbc21cb5d"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "85e3d72675e548bbc16959dd724cf99460df33b0bf582683108c1d11acd0d0fe",
+        "family": "Hi4",
+        "active": [
+          [
+            25,
+            31
+          ]
+        ],
+        "actionable": 68,
+        "cells": "D13:E13",
+        "dependencies": {
+          "AttackHi4Start": "07547d55ef74f5df6c11308103bdf2ed63757aa206e9cefaa781db54df4c081e"
+        }
+      },
+      "AttackLw42": {
+        "sha256": "8cc031b07df50749189c97d1105f9fd55a2c56154104664cdb53a1e216d1f109",
+        "family": "Lw4",
+        "active": [
+          [
+            12,
+            15
+          ],
+          [
+            26,
+            30
+          ]
+        ],
+        "actionable": 62,
+        "cells": "F13:G13",
+        "dependencies": {
+          "AttackLw4Start": "7c0f4e05a79bea0d242f74a61fe96f66f2105293f64f03d8227431ae87fb3746",
+          "AttackLw41": "7b41cb768a22894e37f55868ab8cc271d224518f60d63c3c3cee61c6c828ebd3"
+        },
+        "prefix": "AttackLw41"
+      },
+      "AttackLw41": {
+        "sha256": "7b41cb768a22894e37f55868ab8cc271d224518f60d63c3c3cee61c6c828ebd3",
+        "family": "Lw4",
+        "active": [
+          [
+            12,
+            15
+          ]
+        ],
+        "actionable": 40,
+        "cells": "F13:G13",
+        "dependencies": {
+          "AttackLw4Start": "7c0f4e05a79bea0d242f74a61fe96f66f2105293f64f03d8227431ae87fb3746"
+        }
+      }
+    },
+    "ivysaur": {
+      "AttackS4Hi": {
+        "sha256": "a983a3cd82da05ab891c7ec074e5dca58821c63dfb37a883d750afcae6b9550e",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 60,
+        "cells": "B14:C14",
+        "dependencies": {
+          "AttackS4Start": "a987cff24e0f93bbf90ad1618a71b2884172d3213de67dcaa1ed870aaea77ad8"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "2bd0eaa5cafacbeb80ac4c1915febb83b73ec89149110f0c5f770fadff320eb9",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 60,
+        "cells": "B14:C14",
+        "dependencies": {
+          "AttackS4Start": "a987cff24e0f93bbf90ad1618a71b2884172d3213de67dcaa1ed870aaea77ad8"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "9548f86784427a84b103cb7ab9f4432bfcdcb13bb2b27dda81711e78966dd5aa",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 60,
+        "cells": "B14:C14",
+        "dependencies": {
+          "AttackS4Start": "a987cff24e0f93bbf90ad1618a71b2884172d3213de67dcaa1ed870aaea77ad8"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "525e577872b0d85764c8c4e2f378625c692ddbc258ac11d54dd95f73bd3b1e04",
+        "family": "Hi4",
+        "active": [
+          [
+            13,
+            19
+          ]
+        ],
+        "actionable": 47,
+        "cells": "D14:E14",
+        "dependencies": {
+          "AttackHi4Start": "9053d36a5ab3a4799f247219d6abf38467ace44488b8100ed6e55cc7260482e4"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "940519bf5b92309a126b15951abc4c87919ef3b0b48cbb7afd748b1b38d1aaec",
+        "family": "Lw4",
+        "active": [
+          [
+            10,
+            11
+          ]
+        ],
+        "actionable": 48,
+        "cells": "F14:G14",
+        "dependencies": {
+          "AttackLw4Start": "1aabe16054ef87680829d5a28360173d8b08c16cc7de27acf36eb56ba96bbc81"
+        }
+      }
+    },
+    "jigglypuff": {
+      "AttackS4S": {
+        "sha256": "bc7e3d70e5683acc52d0bd89ba412f054085840313cee32d26591bcf16a40967",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            20
+          ]
+        ],
+        "actionable": 45,
+        "cells": "B15:C15",
+        "dependencies": {
+          "AttackS4Start": "739468a1031cbe0c56bc416f0776dab507d5eafa995dd0f0d816d7c5c04d1be3"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "401c8f02757b0ebfc4b89c517ecc1cc02ba545a67074177ce631ecf7ddf1e22d",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            20
+          ]
+        ],
+        "actionable": 45,
+        "cells": "B15:C15",
+        "dependencies": {
+          "AttackS4Start": "739468a1031cbe0c56bc416f0776dab507d5eafa995dd0f0d816d7c5c04d1be3"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "c7c404253866d5c94d38dd93cecafbf7db889e2701df9fbe0648de267d520005",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            20
+          ]
+        ],
+        "actionable": 45,
+        "cells": "B15:C15",
+        "dependencies": {
+          "AttackS4Start": "739468a1031cbe0c56bc416f0776dab507d5eafa995dd0f0d816d7c5c04d1be3"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "6728d048c307bf1c995fcbdd938b79167f61233106d204e647f6529746690b11",
+        "family": "Hi4",
+        "active": [
+          [
+            7,
+            10
+          ]
+        ],
+        "actionable": 45,
+        "cells": "D15:E15",
+        "dependencies": {
+          "AttackHi4Start": "e8995da57e2bb0e1e574bacecafb469f51854bcdd18a1e7d3ee57ec2318fb5e3"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "a1ad5cf0ba5a7c7bdaa870ac07cd7d2da6de603ba16fc42b263c64777aace579",
+        "family": "Lw4",
+        "active": [
+          [
+            9,
+            10
+          ]
+        ],
+        "actionable": 48,
+        "cells": "F15:G15",
+        "dependencies": {
+          "AttackLw4Start": "9ea8f4282a9ff938b1a6ed3c88395ef735a9d368a37162fa2c4aa3a5357e6057"
+        }
+      }
+    },
+    "kirby": {
+      "AttackS4Hi": {
+        "sha256": "fb8ababec71f923753c92555a12f5df081664f8c834e94973addbbb2ab20fefe",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            21
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B16:C16",
+        "dependencies": {
+          "AttackS4Start": "5c8ae3adf61c3e9d8fe036dbd86f648d72d41e7022f2e05ec62325ab63dfc8da"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "f1cd2ec1fdbcc1a9d208578c7b25c5b06acf70f7c8ebcf765053c632b0e23678",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            21
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B16:C16",
+        "dependencies": {
+          "AttackS4Start": "5c8ae3adf61c3e9d8fe036dbd86f648d72d41e7022f2e05ec62325ab63dfc8da"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "5faf57e9e72c8609dfd12020baf7d256f3c52a91fe856b71311b6aeae447f0df",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            21
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B16:C16",
+        "dependencies": {
+          "AttackS4Start": "5c8ae3adf61c3e9d8fe036dbd86f648d72d41e7022f2e05ec62325ab63dfc8da"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "f677146758df98c444b1e01e45fe53ec1f4f1946e797d3141f376c8f962c13e0",
+        "family": "Hi4",
+        "active": [
+          [
+            10,
+            18
+          ]
+        ],
+        "actionable": 40,
+        "cells": "D16:E16",
+        "dependencies": {
+          "AttackHi4Start": "b01940bc8e823d6dc48a1c1f1c600e097b8f2ab1559501a0fde0e56fee7d09bc"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "b32c2413eca9bb773cf029cb6fbbae4caf70afee7e878af66b407d2ae2172a7c",
+        "family": "Lw4",
+        "active": [
+          [
+            8,
+            22
+          ]
+        ],
+        "actionable": 51,
+        "cells": "F16:G16",
+        "dependencies": {
+          "AttackLw4Start": "148cb8c267a7699faa15773e7b132e411c4bd34f19ef042b6501678a1a293382"
+        }
+      }
+    },
+    "knuckles": {
+      "AttackS4S": {
+        "sha256": "353d481b4513e21f5f6b522272b785b92f48ee669b599af1986a881d7e0e7e58",
+        "family": "S4",
+        "active": [
+          [
+            23,
+            28
+          ]
+        ],
+        "actionable": 52,
+        "cells": "B17:C17",
+        "dependencies": {
+          "AttackS4Start": "056cc09c30d50fd54d2bafa1ad1101511a97f3d8c7e40956de17e13b4dacf53a"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "be53cacb4822b20f41fddd6156f6082db545d673b9ef266b18e0ee6fec711bff",
+        "family": "S4",
+        "active": [
+          [
+            23,
+            28
+          ]
+        ],
+        "actionable": 52,
+        "cells": "B17:C17",
+        "dependencies": {
+          "AttackS4Start": "056cc09c30d50fd54d2bafa1ad1101511a97f3d8c7e40956de17e13b4dacf53a"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "60c988253fa45db766f431d5f852989cc0f453519920df961ffa56c69fbcce18",
+        "family": "S4",
+        "active": [
+          [
+            23,
+            28
+          ]
+        ],
+        "actionable": 52,
+        "cells": "B17:C17",
+        "dependencies": {
+          "AttackS4Start": "056cc09c30d50fd54d2bafa1ad1101511a97f3d8c7e40956de17e13b4dacf53a"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "8671361d05f5bfca1daa0f2944221f2afa6a7f103cd4baefde8f5b5cb6e001b5",
+        "family": "Hi4",
+        "active": [
+          [
+            14,
+            22
+          ]
+        ],
+        "actionable": 49,
+        "cells": "D17:E17",
+        "dependencies": {
+          "AttackHi4Start": "a25668efe3b06153718f45f0d25fe7f8c660a69e53250c9d687b1c918d2c2d43"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "c9aa485d991f18e08c2d9187b1c32ff68049c43d493e1a039d8adb9df98784b3",
+        "family": "Lw4",
+        "active": [
+          [
+            12,
+            32
+          ]
+        ],
+        "actionable": 36,
+        "cells": "F17:G17",
+        "dependencies": {
+          "AttackLw4Start": "0b8fa397ab366539b6c0e5222925548fa3c81d7e2c141cac78e448b00ddc6b8a"
+        }
+      }
+    },
+    "link": {
+      "AttackS4S": {
+        "sha256": "f0e6f3f751a28357301f9aa1646efebf7b099c7d0527d0a330ba47c2cf1248c8",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            17
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B18:C18",
+        "dependencies": {
+          "AttackS4Start": "16f6f0a87834907899b2947740ac70ec91d1376d05c122a4dd39f303b0b686c4"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "4a7ebf728700aecb13cb481fe5c2ebf40d48ba6f8b1fceebaa4d5ac3baabae2d",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            17
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B18:C18",
+        "dependencies": {
+          "AttackS4Start": "16f6f0a87834907899b2947740ac70ec91d1376d05c122a4dd39f303b0b686c4"
+        }
+      },
+      "AttackS4S2": {
+        "sha256": "358b8dc201f2d1cb59cd38dd11a47eb9428e512b74a68a3a9850034ad4c2bbaf",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            17
+          ],
+          [
+            28,
+            32
+          ]
+        ],
+        "actionable": 68,
+        "cells": "B18:C18",
+        "dependencies": {
+          "AttackS4Start": "16f6f0a87834907899b2947740ac70ec91d1376d05c122a4dd39f303b0b686c4",
+          "AttackS4S": "f0e6f3f751a28357301f9aa1646efebf7b099c7d0527d0a330ba47c2cf1248c8"
+        },
+        "prefix": "AttackS4S"
+      },
+      "AttackS4S_2": {
+        "sha256": "830c45698b8daf045eb9d3d9aa3fb45877642bbddb33f6f42a69688e62bee9e5",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            17
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B18:C18",
+        "dependencies": {
+          "AttackS4Start": "16f6f0a87834907899b2947740ac70ec91d1376d05c122a4dd39f303b0b686c4"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "5ea6c0a5fdc8b7f73cd8ea92f366980b1d190199e9b033c36880559b5d2fa99d",
+        "family": "Hi4",
+        "active": [
+          [
+            10,
+            15
+          ],
+          [
+            22,
+            26
+          ],
+          [
+            35,
+            40
+          ]
+        ],
+        "actionable": 61,
+        "cells": "D18:E18",
+        "dependencies": {
+          "AttackHi4Start": "bb446dcc8603226946b16bfa024729826abdee945c083eea4a36c3c48c99af65"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "e1eba9c6da0620f716085cba21eb639b58c389d099e2083bec569206bf856564",
+        "family": "Lw4",
+        "active": [
+          [
+            7,
+            9
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "actionable": 42,
+        "cells": "F18:G18",
+        "dependencies": {
+          "AttackLw4Start": "c9d1d33570342f703ada1276336b9bd112b1177f4d4578433d717853e407f533"
+        }
+      }
+    },
+    "lucario": {
+      "AttackS4S": {
+        "sha256": "8600c17db0916708f955fd93711c1ff071a92dcf76efeed7f1a9f23fa0942ea8",
+        "family": "S4",
+        "active": [
+          [
+            19,
+            23
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B19:C19",
+        "dependencies": {
+          "AttackS4Start": "1f725d52a9792f7d8363cf5e33f18ca940bfd62096d7eeaa2661a237a019e416"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "eec4eb7e6b91fcedeeca30ab0daf82d60de619aadbd5da3b359c9bbeca4cf65f",
+        "family": "S4",
+        "active": [
+          [
+            19,
+            23
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B19:C19",
+        "dependencies": {
+          "AttackS4Start": "1f725d52a9792f7d8363cf5e33f18ca940bfd62096d7eeaa2661a237a019e416"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "40b671a0c37f0f8d71659eef09dbe88568a1ec431e6f49328a8c85388d7b5f8f",
+        "family": "S4",
+        "active": [
+          [
+            19,
+            23
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B19:C19",
+        "dependencies": {
+          "AttackS4Start": "1f725d52a9792f7d8363cf5e33f18ca940bfd62096d7eeaa2661a237a019e416"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "0598976f1b085e15e17a07fd0c63e3809f10cce35cff6f6ecad63c1c99db92f4",
+        "family": "Hi4",
+        "active": [
+          [
+            10,
+            17
+          ],
+          [
+            22,
+            23
+          ]
+        ],
+        "actionable": 24,
+        "cells": "D19:E19",
+        "dependencies": {
+          "AttackHi4Start": "e206ae296044c6e0821a773a47c6bc2de6c7ce912b52e94b1e7f50bef11d5db7"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "096e1ce6bdf7611b7e93c8a677a38145a5b9136c427bd264c668df3e34e7b534",
+        "family": "Lw4",
+        "active": [
+          [
+            12,
+            17
+          ]
+        ],
+        "actionable": 51,
+        "cells": "F19:G19",
+        "dependencies": {
+          "AttackLw4Start": "c7201fcd7903749f5b7db78f005c9b7e7435df5f0665e0751983541014f1cb65"
+        }
+      }
+    },
+    "lucas": {
+      "AttackS4SHi": {
+        "sha256": "4836ec79cfc3fe8656896ec37a66b4b0721c84cc73d19629e8a8b80c7a396360",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 47,
+        "cells": "B20:C20",
+        "dependencies": {
+          "AttackS4Start": "a58ee4b7f264856504670a8385654fbe977f6b334251c7d9b613c279e5be386d"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "6419c6bac26fed70c96b470365fe76ec520a04af1af9bf333e85ef94a96c6ad5",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 47,
+        "cells": "B20:C20",
+        "dependencies": {
+          "AttackS4Start": "a58ee4b7f264856504670a8385654fbe977f6b334251c7d9b613c279e5be386d"
+        }
+      },
+      "AttackS4SLw": {
+        "sha256": "0825dbc05a21e5563842412a3317db697fa234260800e90f4e5d961536ba714c",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 47,
+        "cells": "B20:C20",
+        "dependencies": {
+          "AttackS4Start": "a58ee4b7f264856504670a8385654fbe977f6b334251c7d9b613c279e5be386d"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "8d21b515b8b60f6a8a783abedabb12d1507984d8bf36ec983f8ddb5b6ab1b541",
+        "family": "Hi4",
+        "active": [
+          [
+            21,
+            32
+          ]
+        ],
+        "actionable": 81,
+        "cells": "D20:E20",
+        "dependencies": {
+          "AttackHi4Start": "460c7050424e189621a1ea69f38caabb863d4a45808d0dfad68f67cc5705604d"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "bb4485022a85a69c2aeae4d0fb19c0238aad901a6f11786201844a26deefd8ec",
+        "family": "Lw4",
+        "active": [
+          [
+            20,
+            25
+          ]
+        ],
+        "actionable": 38,
+        "cells": "F20:G20",
+        "dependencies": {
+          "AttackLw4Start": "7fd8ad30829902d7199e484e48d47ca64ad25e2ba2efd6c7ee71f72cd62fae65"
+        }
+      }
+    },
+    "luigi": {
+      "AttackS4Hi": {
+        "sha256": "6783298ad7f956e14d19b06e69a0c1df16f1978a85af5a44887d81c4e03188f1",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            13
+          ]
+        ],
+        "actionable": 42,
+        "cells": "B21:C21",
+        "dependencies": {
+          "AttackS4Start": "7707d9eb826b30f7708872db1c089ba77d1b4497eeef2c00700c9c8c5b23e031"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "6fc7311fe036d41c114e22523689d9b0f46e069252af88f9cbb066777345f56a",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            13
+          ]
+        ],
+        "actionable": 42,
+        "cells": "B21:C21",
+        "dependencies": {
+          "AttackS4Start": "7707d9eb826b30f7708872db1c089ba77d1b4497eeef2c00700c9c8c5b23e031"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "c9ea418730a692f7af32284d563676d5648f2587f911a52be0bf1a80cc986f80",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            13
+          ]
+        ],
+        "actionable": 42,
+        "cells": "B21:C21",
+        "dependencies": {
+          "AttackS4Start": "7707d9eb826b30f7708872db1c089ba77d1b4497eeef2c00700c9c8c5b23e031"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "9c53b563d7645b0c81278fd1d83764488a4555e4b66b8d6a5f4e55985ee9b0db",
+        "family": "Hi4",
+        "active": [
+          [
+            9,
+            13
+          ]
+        ],
+        "actionable": 40,
+        "cells": "D21:E21",
+        "dependencies": {
+          "AttackHi4Start": "a9587d3e766fdb0c590e89ce5caf6c262d8d808c36849bcfbd6134754557a8d1"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "181c655222a89ac77ee6e87ccab7c602df79960c975f9d706da378f1229e32d9",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            6
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "actionable": 38,
+        "cells": "F21:G21",
+        "dependencies": {
+          "AttackLw4Start": "5e690751ee8efa7d149daa356af9db39a44b80b0c4d44ebd81c6fcc290d94c6b"
+        }
+      }
+    },
+    "mario": {
+      "AttackS4Hi": {
+        "sha256": "40f45c8e3c7dda19206534476b0c2fdcc03d482e3493f714fc51bc765d157d22",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            17
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B22:C22",
+        "dependencies": {
+          "AttackS4Start": "6ef622b4357594acdb497f98f75e466bc8dc4b688a139e3b2e2aeb389ecf7ad5"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "ead34b2ba76d157787f81b6a21474c3e7f9b70a0624afb97f8dd689aef32c60b",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            17
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B22:C22",
+        "dependencies": {
+          "AttackS4Start": "6ef622b4357594acdb497f98f75e466bc8dc4b688a139e3b2e2aeb389ecf7ad5"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "04f429ba0ace70ae68ccee7e8ea27b9eb76efe15b7b091831a438fcba69d8f74",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            17
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B22:C22",
+        "dependencies": {
+          "AttackS4Start": "6ef622b4357594acdb497f98f75e466bc8dc4b688a139e3b2e2aeb389ecf7ad5"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "028e03d2bfdd08fc1671b97795d5ff183aae2fb9c91a5edc662ec13187445f7e",
+        "family": "Hi4",
+        "active": [
+          [
+            9,
+            12
+          ]
+        ],
+        "actionable": 38,
+        "cells": "D22:E22",
+        "dependencies": {
+          "AttackHi4Start": "6824bdbd0821e21941a50b8d44af9eb7e7145f0a3eebb03686e9f701efcc57ec"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "d2c9dafcf124f1d94e7abb73a00349b7d0ecd4d3eef56a941aaadd9feb80b401",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            6
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "actionable": 38,
+        "cells": "F22:G22",
+        "dependencies": {
+          "AttackLw4Start": "28ae758bb46999b1250558fb06bfda8ffb1219aaa30eda30521569cc0ebdb986"
+        }
+      }
+    },
+    "marth": {
+      "AttackS4S": {
+        "sha256": "5a84d8f8d988820c157897eb71b64785bb3e0be63eaae124de5a907354936782",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            13
+          ]
+        ],
+        "actionable": 48,
+        "cells": "B23:C23",
+        "dependencies": {
+          "AttackS4Start": "8854bfa8be5a9430a457897ac5ab625a3e3df514bdd78dbaa9d66aa024764ba9"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "93ef6ee2d9a11f16c12f7ddd1e086fa2736b337261e6261b4b1aa3fd78ffb40e",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            13
+          ]
+        ],
+        "actionable": 48,
+        "cells": "B23:C23",
+        "dependencies": {
+          "AttackS4Start": "8854bfa8be5a9430a457897ac5ab625a3e3df514bdd78dbaa9d66aa024764ba9"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "307fe70578c150dfd423e43e8953cf2be3d5b0bfbb6cc110379ea3b2413849ff",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            13
+          ]
+        ],
+        "actionable": 48,
+        "cells": "B23:C23",
+        "dependencies": {
+          "AttackS4Start": "8854bfa8be5a9430a457897ac5ab625a3e3df514bdd78dbaa9d66aa024764ba9"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "e06b003647420b43a19a47900e6e4a2131c701cd80c63aec69b5ab254c2bd573",
+        "family": "Hi4",
+        "active": [
+          [
+            13,
+            17
+          ]
+        ],
+        "actionable": 46,
+        "cells": "D23:E23",
+        "dependencies": {
+          "AttackHi4Start": "322c7c479d78360a0338824aeafdb85cb2abc52078b82a0ad5da2dee96d3e356"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "3fcea271c1431b2dfa4927bc8eb9a76769f9a63535d7ac8ef0eaae73f33430ce",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            7
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "actionable": 62,
+        "cells": "F23:G23",
+        "dependencies": {
+          "AttackLw4Start": "9c6c4e406cbfc3980ae7346602c78b46ba34bc9dc7a3ccf6226372903b7776dd"
+        }
+      }
+    },
+    "meta-knight": {
+      "AttackS4S": {
+        "sha256": "33472f2908fa890cce674bab016e4a6417e9e3a00a2c89184ab5cc351aed2165",
+        "family": "S4",
+        "active": [
+          [
+            24,
+            25
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B24:C24",
+        "dependencies": {
+          "AttackS4Start": "312847db939106d7946c0ab5a0d5b523d83b9bb3ec7cc0b8cc1edd0936fb82d5"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "6f6fdeb8bafb266d2f754d713fb02d3354c1d1e9904ef03880084627c69ff964",
+        "family": "S4",
+        "active": [
+          [
+            24,
+            25
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B24:C24",
+        "dependencies": {
+          "AttackS4Start": "312847db939106d7946c0ab5a0d5b523d83b9bb3ec7cc0b8cc1edd0936fb82d5"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "3fd2ebb00a3f191f040023a1fa5360bdfa8ae22226d92f31b7cbe9b3609aa894",
+        "family": "S4",
+        "active": [
+          [
+            24,
+            25
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B24:C24",
+        "dependencies": {
+          "AttackS4Start": "312847db939106d7946c0ab5a0d5b523d83b9bb3ec7cc0b8cc1edd0936fb82d5"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "95804fd80e8ba11d9a959a9195c7a1303ebde2ea0e0086331a430953d47d04e3",
+        "family": "Hi4",
+        "active": [
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "actionable": 46,
+        "cells": "D24:E24",
+        "dependencies": {
+          "AttackHi4Start": "d564ada224902645263a0812459d5704208a022750117918b295ce30c3a2384b"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "f17c0a0528f6685adef0864b7cebd2cdef43cb50a749d2b6886246779e877e59",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            6
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "actionable": 45,
+        "cells": "F24:G24",
+        "dependencies": {
+          "AttackLw4Start": "b828b9a39575a9f4fc48e367085c4376f89992fb0d04a54595fcd50c305141d6"
+        }
+      }
+    },
+    "mewtwo": {
+      "AttackS4S": {
+        "sha256": "25e3585bff7d998ff7425ef3fde044e6f1d1a8961520fc93b74872f188d531be",
+        "family": "S4",
+        "active": [
+          [
+            18,
+            21
+          ]
+        ],
+        "actionable": 52,
+        "cells": "B25:C25",
+        "dependencies": {
+          "AttackS4Start": "3d2f2c9fbe236b1d89db95e26d0978bf60a3645f7dc7ed04dcea427e260a4ba6"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "04bbd7bc8292197fb683e8720fff2f62f314f3d29bb977b90e865548176e606b",
+        "family": "S4",
+        "active": [
+          [
+            18,
+            21
+          ]
+        ],
+        "actionable": 52,
+        "cells": "B25:C25",
+        "dependencies": {
+          "AttackS4Start": "3d2f2c9fbe236b1d89db95e26d0978bf60a3645f7dc7ed04dcea427e260a4ba6"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "5732484d627609ea08c02af8620a29ae42fa52aa3479e3cf520b373c11d36cc1",
+        "family": "S4",
+        "active": [
+          [
+            18,
+            21
+          ]
+        ],
+        "actionable": 52,
+        "cells": "B25:C25",
+        "dependencies": {
+          "AttackS4Start": "3d2f2c9fbe236b1d89db95e26d0978bf60a3645f7dc7ed04dcea427e260a4ba6"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "f606b4cb679509456c741de10a076261df532196e4c6ee234e049ba10c8359f2",
+        "family": "Hi4",
+        "active": [
+          [
+            7,
+            10
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            33,
+            34
+          ]
+        ],
+        "actionable": 62,
+        "cells": "D25:E25",
+        "dependencies": {
+          "AttackHi4Start": "367492dc24c83b7342216d0345790a9245101f94c2377bbdd439c4c531ff70c1"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "363bcb47e4da07727cb8891bb65335e538dcd284f81c6dd43bf093e2dfe31627",
+        "family": "Lw4",
+        "active": [
+          [
+            20,
+            30
+          ]
+        ],
+        "actionable": 43,
+        "cells": "F25:G25",
+        "dependencies": {
+          "AttackLw4Start": "456c0549757a789cadc14f7e61bbbfe56545a9ac1eefc69ad7609e7fb00682d6"
+        }
+      }
+    },
+    "game-watch": {
+      "AttackS4S": {
+        "sha256": "70fea50cf64a8ef42833ee56553888ea221f94881d8c1d5d5ab9d275df0be6df",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            27
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B26:C26",
+        "dependencies": {
+          "AttackS4Start": "9beafec778e502f9333b0da816392e6e6dfc5a35315b90b03e2555f641e9f837"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "02f4f380071c34b9959b5ef6a58835d7c00a65f695fb06f469e62432ec4f64b1",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            27
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B26:C26",
+        "dependencies": {
+          "AttackS4Start": "9beafec778e502f9333b0da816392e6e6dfc5a35315b90b03e2555f641e9f837"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "1d0bc2e1fd98b2ab1ad43985866fd0df1ad507c1c133e44103cab94bdd4c5493",
+        "family": "S4",
+        "active": [
+          [
+            13,
+            27
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B26:C26",
+        "dependencies": {
+          "AttackS4Start": "9beafec778e502f9333b0da816392e6e6dfc5a35315b90b03e2555f641e9f837"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "72f3bb718b38e885954a4dcfbbc44a72fb450a0deb01139f9ef17955bb72e419",
+        "family": "Hi4",
+        "active": [
+          [
+            24,
+            26
+          ]
+        ],
+        "actionable": 50,
+        "cells": "D26:E26",
+        "dependencies": {
+          "AttackHi4Start": "8863b2678785b02ec498bb514a2d75cea363f5e1b8cdbf785eaabf363df3b6a1"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "4e0c9b7ad5e7f6a9295f69baf4e02a7c01f35587d641c9fc9240d73cef4cffce",
+        "family": "Lw4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 34,
+        "cells": "F26:G26",
+        "dependencies": {
+          "AttackLw4Start": "23e68407b11b4547780684fb922349aff3c3b590c00651da503dff9b5949a278"
+        }
+      }
+    },
+    "ness": {
+      "AttackS4Hi": {
+        "sha256": "194fec47134f7c48373fdbd4fdcf1fd31457db8c07e7a1dbb45fa99b4de30434",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            17
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B27:C27",
+        "dependencies": {
+          "AttackS4Start": "4f2a348a26dd1d6d483f9fb5d5536a1dd8317152a34541701f79c42852525973"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "876b33132650a2f7cf949df62d149c3b9ef9aff0f2b7f5bad1c928b0bb2a1662",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            17
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B27:C27",
+        "dependencies": {
+          "AttackS4Start": "4f2a348a26dd1d6d483f9fb5d5536a1dd8317152a34541701f79c42852525973"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "5b32c238fe5d1450dce00ce2dcad2d45d0d9d802ef8c891546c76011630dde12",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            17
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B27:C27",
+        "dependencies": {
+          "AttackS4Start": "4f2a348a26dd1d6d483f9fb5d5536a1dd8317152a34541701f79c42852525973"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "a36c0bf3d6c8bfa15058b10ce6dd04b7283728ce07fa03cd8707876fb18c7f0f",
+        "family": "Hi4",
+        "active": [
+          [
+            10,
+            29
+          ]
+        ],
+        "actionable": 47,
+        "cells": "D27:E27",
+        "dependencies": {
+          "AttackHi4Start": "a6f524e14da3a35a1740fc37231b811bc6305bc474209a69484bd5afad42cd2f"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "afa07b00d15cd69571c17350a7414b9932b5485c7e685d92600f6971bb4968ad",
+        "family": "Lw4",
+        "active": [
+          [
+            10,
+            37
+          ]
+        ],
+        "actionable": 47,
+        "cells": "F27:G27",
+        "dependencies": {
+          "AttackLw4Start": "f85766248c9fc9a20e92f929ae390fdcdb32de0e58ac3368e794ff79a0775972"
+        }
+      }
+    },
+    "olimar": {},
+    "peach": {
+      "AttackS4S": {
+        "sha256": "04f24a0219305c107276c2e41c54f5a4d115b3778b0bc90689daa07620199e37",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            20
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B29:C29",
+        "dependencies": {
+          "AttackS4Start": "b2dc44afdbbf8252f92ddfb770aeb6a3927013219f5eb05c23451a44021ec24a"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "b52f78ed06b1572aaf319146d1436e38476d97bae6324676df70f111165782d2",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            20
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B29:C29",
+        "dependencies": {
+          "AttackS4Start": "b2dc44afdbbf8252f92ddfb770aeb6a3927013219f5eb05c23451a44021ec24a"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "3d56946ab3769ba07a533e68127cc56a4bee654e1bc812a9a31321f487964a01",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            20
+          ]
+        ],
+        "actionable": 40,
+        "cells": "B29:C29",
+        "dependencies": {
+          "AttackS4Start": "b2dc44afdbbf8252f92ddfb770aeb6a3927013219f5eb05c23451a44021ec24a"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "059fdfa07491f985f8bba0b6b45e37d621a4a09c90c7d92a901821cc407e8635",
+        "family": "Hi4",
+        "active": [
+          [
+            13,
+            22
+          ]
+        ],
+        "actionable": 45,
+        "cells": "D29:E29",
+        "dependencies": {
+          "AttackHi4Start": "09d6e3582ea2207adb9530f7db3049a166b8fd463f8188e2c622dbcc1f236228"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "4e7dcd21f44fdfea18bde08e31457d369af0b2a283765235d90f584f6dab51d1",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            6
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            21,
+            22
+          ]
+        ],
+        "actionable": 40,
+        "cells": "F29:G29",
+        "dependencies": {
+          "AttackLw4Start": "eebfa7bedaa4770251170fe0fb17599a8ba3b35cb19c76e8e7262bcc99682143"
+        }
+      }
+    },
+    "pikachu": {
+      "AttackS4S": {
+        "sha256": "88848d2faf45e0d680fd5b5a53f14db1172bc03683dcd420ae6289823d347651",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            22
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B30:C30",
+        "dependencies": {
+          "AttackS4Start": "a59ca9ce20192223704f887077c0b3314bb981155819ca9576f6d1f891cb523a"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "cad4ec9e14867c3d0b5d36de99a5eed35df4fcbb921220b2031fac0605aed0f0",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            22
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B30:C30",
+        "dependencies": {
+          "AttackS4Start": "a59ca9ce20192223704f887077c0b3314bb981155819ca9576f6d1f891cb523a"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "9fdddb606b1180aa706ac000e0ed19a3c5e8324a5684b445f812e33ed6a7bdd9",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            22
+          ]
+        ],
+        "actionable": 50,
+        "cells": "B30:C30",
+        "dependencies": {
+          "AttackS4Start": "a59ca9ce20192223704f887077c0b3314bb981155819ca9576f6d1f891cb523a"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "8443b712eebee5572f8c0867987551128d3c143319c4349ed5f0425de77ef8b0",
+        "family": "Hi4",
+        "active": [
+          [
+            8,
+            17
+          ]
+        ],
+        "actionable": 44,
+        "cells": "D30:E30",
+        "dependencies": {
+          "AttackHi4Start": "63c4db3e4b6465ef2e21412ff5e8b44cf74bd5bfe780103859752ffb25d1c07e"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "8aa501c820eaa86efc9b1d6a56acd195d9297a73f0d3eb4a59f1a745c9251264",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            7
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "actionable": 55,
+        "cells": "F30:G30",
+        "dependencies": {
+          "AttackLw4Start": "351afa8eea44cb17dd6973a841bf803862274fc087996827fae6f88078bf5a9c"
+        }
+      }
+    },
+    "pit": {
+      "AttackS4S": {
+        "sha256": "cfaabedf474486fc7940cca2a37a43f10b144f7c321a5cbda586fafa0d044c44",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            12
+          ]
+        ],
+        "actionable": 34,
+        "cells": "B31:C31",
+        "dependencies": {
+          "AttackS4Start": "28e956debb252313950c43a536af6e86dd3e5d9c09bd056162757336f106acd6"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "e793df7b6c0dcfd62efe3c7e31ee9f421c4b5cec9b2b1e01056bbdb7ace35d8d",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            12
+          ]
+        ],
+        "actionable": 34,
+        "cells": "B31:C31",
+        "dependencies": {
+          "AttackS4Start": "28e956debb252313950c43a536af6e86dd3e5d9c09bd056162757336f106acd6"
+        }
+      },
+      "AttackS4S2": {
+        "sha256": "912d7e0e3ad6c1d0d501ff20d7787c6295bb67dfbb6543f64d8f763d1a019a99",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            12
+          ],
+          [
+            18,
+            21
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B31:C31",
+        "dependencies": {
+          "AttackS4Start": "28e956debb252313950c43a536af6e86dd3e5d9c09bd056162757336f106acd6",
+          "AttackS4S": "cfaabedf474486fc7940cca2a37a43f10b144f7c321a5cbda586fafa0d044c44"
+        },
+        "prefix": "AttackS4S"
+      },
+      "AttackS4S_2": {
+        "sha256": "c544795656d56a3263ed18ec1b2c25434ebe2834e5c15767ea6510f0fbeeeac8",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            12
+          ]
+        ],
+        "actionable": 34,
+        "cells": "B31:C31",
+        "dependencies": {
+          "AttackS4Start": "28e956debb252313950c43a536af6e86dd3e5d9c09bd056162757336f106acd6"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "79f88c4207bdbc033dcb6523d3a4b63c7e5ce7138d1613be85dfa97dbb827286",
+        "family": "Hi4",
+        "active": [
+          [
+            7,
+            16
+          ],
+          [
+            19,
+            25
+          ]
+        ],
+        "actionable": 52,
+        "cells": "D31:E31",
+        "dependencies": {
+          "AttackHi4Start": "7f6faf0e3da5e700c213722ff1edc64bef884795781b73f99802f1e9b4f21f4d"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "0e491008f4e5218d8b02f464e2f5240270ef61dbb18a013ab16a5835a2aaf70e",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            8
+          ],
+          [
+            19,
+            21
+          ]
+        ],
+        "actionable": 42,
+        "cells": "F31:G31",
+        "dependencies": {
+          "AttackLw4Start": "2488134d4ba9ad2b7e0d8a5a464137f44e2ddd715930fb2666b766a8b059e7cb"
+        }
+      }
+    },
+    "rob": {
+      "AttackS4Hi": {
+        "sha256": "a0ecc32303e9b829893fb515bcd5a5b0725a723015a8397833226030a48d7103",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B32:C32",
+        "dependencies": {
+          "AttackS4Start": "60e9ce8b57d8006c459da1f3dd5950f0a4f72fd4170afa8d49e9d6d5c8079798"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "0403f762408c3e145a18b895f9fa074d07bc0282e5b008544b6a84e587eb6eda",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B32:C32",
+        "dependencies": {
+          "AttackS4Start": "60e9ce8b57d8006c459da1f3dd5950f0a4f72fd4170afa8d49e9d6d5c8079798"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "d0be7b6c12a3ad88d7dd4a6bcea47f728b734b65d906869e9d01b76a39546c83",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B32:C32",
+        "dependencies": {
+          "AttackS4Start": "60e9ce8b57d8006c459da1f3dd5950f0a4f72fd4170afa8d49e9d6d5c8079798"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "80e6039ce246770747f78007b1682be30b09885d53a9c4f7f798e10f66a99c1d",
+        "family": "Hi4",
+        "active": [
+          [
+            5,
+            7
+          ],
+          [
+            12,
+            16
+          ]
+        ],
+        "actionable": 44,
+        "cells": "D32:E32",
+        "dependencies": {
+          "AttackHi4Start": "bcd65fb46917950d3bed9a1d4afbd0e9c850b633c8abb0693ccf25af3819f08a"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "265764973301496b3ce0747e2a6e2a31a9c910a2cc630680b0c653e7fd80944d",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            11
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "actionable": 36,
+        "cells": "F32:G32",
+        "dependencies": {
+          "AttackLw4Start": "3c71c490dd1640ac83e13fe41498c6aac34093393e4ef51ff2631cc60fe584b1"
+        }
+      }
+    },
+    "roy": {
+      "AttackS4S": {
+        "sha256": "710185bca53f214fd9a16dcce39ca1d975210824221eb93d34c8f8b46484127b",
+        "family": "S4",
+        "active": [
+          [
+            11,
+            14
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B33:C33",
+        "dependencies": {
+          "AttackS4Start": "f156b2167a2db35ec19241eba214751df1cd8d919d2eb5178afe45d167dae0c0"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "baa7ef70edc7a25957629048dd45bea7af094c5e313ce2c44a82d672aa1276c0",
+        "family": "S4",
+        "active": [
+          [
+            11,
+            14
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B33:C33",
+        "dependencies": {
+          "AttackS4Start": "f156b2167a2db35ec19241eba214751df1cd8d919d2eb5178afe45d167dae0c0"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "5b91b534ce716db1e2eeef9ddb4fb4f1c27e4ed02f8e061ef5e91aadde19d996",
+        "family": "S4",
+        "active": [
+          [
+            11,
+            14
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B33:C33",
+        "dependencies": {
+          "AttackS4Start": "f156b2167a2db35ec19241eba214751df1cd8d919d2eb5178afe45d167dae0c0"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "3e569ef177402aa609d677cfff8711f418f4edba86220412d56ea025c88bcdcd",
+        "family": "Hi4",
+        "active": [
+          [
+            14,
+            23
+          ]
+        ],
+        "actionable": 45,
+        "cells": "D33:E33",
+        "dependencies": {
+          "AttackHi4Start": "4c23d4d66d9e4886ca1fe35570fd2b02763fc8341c44d00b2cb6dcfe4bfbca18"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "e34fe7297bc4617f4edcf8527843bf7a1ec3db336bfea6513bb409130cc5ef91",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            17
+          ]
+        ],
+        "actionable": 61,
+        "cells": "F33:G33",
+        "dependencies": {
+          "AttackLw4Start": "1a005614202c8675af9afffe5633e1d62dacabf003f01bdbc7b72f089088bc3b"
+        }
+      }
+    },
+    "samus": {
+      "AttackS4Hi": {
+        "sha256": "88ee8defdb53bd7c3f16bec1792dc8f428b44048c5d02484c005731758e879db",
+        "family": "S4",
+        "active": [
+          [
+            9,
+            12
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B34:C34",
+        "dependencies": {
+          "AttackS4Start": "04f72db90d0def02533d3f5044ea1b4f0c8618b49489a438790d2b7a6b5ed25d"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "d389f0b090881a6dac3f9d17e06c52f7a3a7056210902477fdd2e95379200021",
+        "family": "S4",
+        "active": [
+          [
+            9,
+            12
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B34:C34",
+        "dependencies": {
+          "AttackS4Start": "04f72db90d0def02533d3f5044ea1b4f0c8618b49489a438790d2b7a6b5ed25d"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "3f54d1a81f6fb7795b0c74267a912b813f354e7cd740b06e3a7af591555ec0ee",
+        "family": "S4",
+        "active": [
+          [
+            9,
+            12
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B34:C34",
+        "dependencies": {
+          "AttackS4Start": "04f72db90d0def02533d3f5044ea1b4f0c8618b49489a438790d2b7a6b5ed25d"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "a5a6ccaeea193f57c14272144abddd8413d5dc12b64843e67a8cc6ad4a2568e3",
+        "family": "Hi4",
+        "active": [
+          [
+            12,
+            14
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            20,
+            22
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "actionable": 51,
+        "cells": "D34:E34",
+        "dependencies": {
+          "AttackHi4Start": "ff2a2e4e931c0360add1f6ba827d9c79a19cc0e4d92a3bcff64467d0f9458f77"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "71e1dd05dcbfe77c69a8fa38cd3c9b1643e1ce9a54a05dcebcf6694eded2431b",
+        "family": "Lw4",
+        "active": [
+          [
+            5,
+            7
+          ],
+          [
+            13,
+            15
+          ]
+        ],
+        "actionable": 44,
+        "cells": "F34:G34",
+        "dependencies": {
+          "AttackLw4Start": "36514377a7cf9552e10b0f1222a979a4c1a2317c5c319221904d9ec18f1a0415"
+        }
+      }
+    },
+    "sheik": {
+      "AttackS4S": {
+        "sha256": "fc6034d0bf358a7059f5cc4a7fb035061c8c61d60e964a268d2094ea109e9d17",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            13
+          ],
+          [
+            26,
+            28
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B35:C35",
+        "dependencies": {
+          "AttackS4Start": "f364b0cdc86d4040751215efee743b9b4e2f14b2b081bab0c61e90ef19ec4711"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "2ec41c16b4568ee72c8baf057ac3caf46672caa24c9715b3f8baacc52dfbeb55",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            13
+          ],
+          [
+            26,
+            28
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B35:C35",
+        "dependencies": {
+          "AttackS4Start": "f364b0cdc86d4040751215efee743b9b4e2f14b2b081bab0c61e90ef19ec4711"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "76f43a409f2487dacf7d4eca41b15c7fc8ba1e91664ecfe06bfddb595a9d597d",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            13
+          ],
+          [
+            26,
+            28
+          ]
+        ],
+        "actionable": 43,
+        "cells": "B35:C35",
+        "dependencies": {
+          "AttackS4Start": "f364b0cdc86d4040751215efee743b9b4e2f14b2b081bab0c61e90ef19ec4711"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "f614fb4053485c896130ade16aa805c8cbf10a991f5e15620a81fd0e6c72e251",
+        "family": "Hi4",
+        "active": [
+          [
+            12,
+            12
+          ],
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 40,
+        "cells": "D35:E35",
+        "dependencies": {
+          "AttackHi4Start": "87cb12a4a632d296cc63cfcabb82ea14709ce1f11c1b83d73005c485923ca665"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "7701fe5efc736192afb39e83a900414612df1c754a5eeaf1e1d6341a75751af3",
+        "family": "Lw4",
+        "active": [
+          [
+            6,
+            10
+          ],
+          [
+            17,
+            20
+          ],
+          [
+            23,
+            25
+          ]
+        ],
+        "actionable": 47,
+        "cells": "F35:G35",
+        "dependencies": {
+          "AttackLw4Start": "1f41c442cd0094aa5d27263937be3c6ed24792f61ec364d6e579e4bfb263b81c"
+        }
+      }
+    },
+    "snake": {
+      "AttackS4S": {
+        "sha256": "b967f00e291cd8546fc38a5b425ae413ffce576f13f18b19698567d5f8ae1078",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            14
+          ],
+          [
+            22,
+            24
+          ]
+        ],
+        "actionable": 46,
+        "cells": "B36:C36",
+        "dependencies": {
+          "AttackS4Start": "3264d361a5f2b98fb629d10c1031a0ecee46e7f07a071a0b744aeb6ca4bad770"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "a57d1f534d5b22e5af2a7ccbe36fad1c778d0ab38afc81141e820e89cbd8ed66",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            14
+          ],
+          [
+            22,
+            24
+          ]
+        ],
+        "actionable": 46,
+        "cells": "B36:C36",
+        "dependencies": {
+          "AttackS4Start": "3264d361a5f2b98fb629d10c1031a0ecee46e7f07a071a0b744aeb6ca4bad770"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "daac6574804f2552347d9371afbc94bf893208f71edb6069dd53032f34b23ab7",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            14
+          ],
+          [
+            22,
+            24
+          ]
+        ],
+        "actionable": 46,
+        "cells": "B36:C36",
+        "dependencies": {
+          "AttackS4Start": "3264d361a5f2b98fb629d10c1031a0ecee46e7f07a071a0b744aeb6ca4bad770"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "a010763e0b20ac5c34d90d7176a11fa65d68eb3f452250afceeb66c8f570ad11",
+        "family": "Hi4",
+        "active": [
+          [
+            11,
+            12
+          ]
+        ],
+        "actionable": 51,
+        "cells": "D36:E36",
+        "dependencies": {
+          "AttackHi4Start": "368516219ab817e9fa8a5647b6f101dcb9038f3d7704814d9bc690092df17152"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "b2b525a5fd0142ff6fd52df8b5893262803cf14444495dfe2d13fd09acc50f2f",
+        "family": "Lw4",
+        "active": null,
+        "actionable": 34,
+        "cells": "F36:G36",
+        "dependencies": {
+          "AttackLw4Start": "5478515947dd6f168901b45230362c46d1c184399bba4132f5c20c9425177281"
+        }
+      }
+    },
+    "sonic": {
+      "AttackS4Hi": {
+        "sha256": "f11559e5462fa8e24946f07174bb9af29711b09961dff8b9e704581dcc9d06e1",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            18
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B37:C37",
+        "dependencies": {
+          "AttackS4Start": "610158717a56d5f3b124932715b9b761093c188aabc76dd6ee2d2daf77a5e192"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "70c03544c72bb25f3e159a4453c18c4e72287ff51344f53fe6e8391412577eb4",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            18
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B37:C37",
+        "dependencies": {
+          "AttackS4Start": "610158717a56d5f3b124932715b9b761093c188aabc76dd6ee2d2daf77a5e192"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "4583627d700c5d14e57e4d83934575bc33bbde438fb9e94aa826f53c77763c46",
+        "family": "S4",
+        "active": [
+          [
+            15,
+            18
+          ]
+        ],
+        "actionable": 41,
+        "cells": "B37:C37",
+        "dependencies": {
+          "AttackS4Start": "610158717a56d5f3b124932715b9b761093c188aabc76dd6ee2d2daf77a5e192"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "87e68fbff6750e26554ce9b843b9132dd77be121967341c93dc69f6217781631",
+        "family": "Hi4",
+        "active": [
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            19
+          ]
+        ],
+        "actionable": 45,
+        "cells": "D37:E37",
+        "dependencies": {
+          "AttackHi4Start": "51b52c6f807ccce466281702fd01e10d518ff9392178f32b6893cdf2251339be"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "be6ebf85caf3423bc1af0542c9ffcc89aac3df3fd4a855371882b28a9152a2b2",
+        "family": "Lw4",
+        "active": [
+          [
+            10,
+            19
+          ],
+          [
+            24,
+            30
+          ]
+        ],
+        "actionable": 52,
+        "cells": "F37:G37",
+        "dependencies": {
+          "AttackLw4Start": "cec114ee6a71a8eddb8b6a7a74f138b0a8ddd5d2321b1ecb689bfe43722526a3"
+        }
+      }
+    },
+    "squirtle": {
+      "AttackS4Hi": {
+        "sha256": "d4b68441e7592641cd583510c4768d4ff717e0cae2fd12ac396fe1c025c0ee3b",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            18
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B38:C38",
+        "dependencies": {
+          "AttackS4Start": "16126ce0216655f6e0c64b75a845ba87f0c19c3b6c9fdad4a2dda7e152f90792"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "1917aa7c1af7c7fa9116bf0c8568ec7af3e5462aa49d3c668d8537ce00bd73f6",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            18
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B38:C38",
+        "dependencies": {
+          "AttackS4Start": "16126ce0216655f6e0c64b75a845ba87f0c19c3b6c9fdad4a2dda7e152f90792"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "399163419730f7250c6ea8345c5ec3033403dcb41d837c2495b1c0624b1e44eb",
+        "family": "S4",
+        "active": [
+          [
+            12,
+            18
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B38:C38",
+        "dependencies": {
+          "AttackS4Start": "16126ce0216655f6e0c64b75a845ba87f0c19c3b6c9fdad4a2dda7e152f90792"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "f282737f0fb3e31c02549993081391a65ceb1d2f27f341a7d67bbd3e8b0e8ffb",
+        "family": "Hi4",
+        "active": [
+          [
+            14,
+            18
+          ]
+        ],
+        "actionable": 62,
+        "cells": "D38:E38",
+        "dependencies": {
+          "AttackHi4Start": "7bffd67a5867cb6be11175dd826d7c2a002666f4b792da7da5647a5dc429840e"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "0f404951e2edfb630b1665030507dae478dc4f311af94e9aa399e2de91e317d9",
+        "family": "Lw4",
+        "active": [
+          [
+            16,
+            20
+          ],
+          [
+            24,
+            28
+          ],
+          [
+            32,
+            35
+          ]
+        ],
+        "actionable": 50,
+        "cells": "F38:G38",
+        "dependencies": {
+          "AttackLw4Start": "fa335b9dc822f6e1d094670881e1a05ca162cc4afb5def7d4038495bc425c719"
+        }
+      }
+    },
+    "toon-link": {
+      "AttackS4S": {
+        "sha256": "04e7bb901604e7767919611f6682da4b112b5a1fa04ecbf8a4a15ba26632e2e8",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            23
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B39:C39",
+        "dependencies": {
+          "AttackS4Start": "07eb3f65d021e6c9969556fad152ea38646aca4a6efd3f1a8860cd75067dd0ac"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "32914ef31b032ab6687eb4e39675a913f2787fba0d1276a016568a66b720b0dd",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            23
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B39:C39",
+        "dependencies": {
+          "AttackS4Start": "07eb3f65d021e6c9969556fad152ea38646aca4a6efd3f1a8860cd75067dd0ac"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "f45b440cd876c1bcd37428dd896dcac3c5a89224ce6c08e0d0d746c112325331",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            23
+          ]
+        ],
+        "actionable": 53,
+        "cells": "B39:C39",
+        "dependencies": {
+          "AttackS4Start": "07eb3f65d021e6c9969556fad152ea38646aca4a6efd3f1a8860cd75067dd0ac"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "93081f3abaf6e1c5a6f45f771776d6503918e2f000bf485756600b2448a75d7e",
+        "family": "Hi4",
+        "active": [
+          [
+            11,
+            16
+          ]
+        ],
+        "actionable": 44,
+        "cells": "D39:E39",
+        "dependencies": {
+          "AttackHi4Start": "a36ef2bfcd0c482da2ef39a8e7d82ab1a4aa28947442bb2e1f02744bde78b84d"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "9fe93dc877882841ba1e5291a67a3e9a70517bbc9351d9ca766c7c5bee539fc4",
+        "family": "Lw4",
+        "active": [
+          [
+            8,
+            10
+          ],
+          [
+            16,
+            18
+          ]
+        ],
+        "actionable": 40,
+        "cells": "F39:G39",
+        "dependencies": {
+          "AttackLw4Start": "9c3650236321833f20978d192444374687e6f2f69c474c1f9cc4164662569767"
+        }
+      }
+    },
+    "wario": {
+      "AttackS4S": {
+        "sha256": "3bbd5acc20b3d3158e0b47ea6667924cd0c6923876adec3b2e47034dea1513b3",
+        "family": "S4",
+        "active": [
+          [
+            8,
+            15
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B40:C40",
+        "dependencies": {
+          "AttackS4Start": "b2243028ef29d8e8901941aeb2b7abf93b29ed23e36c9e37d047c048302d7e9d"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "62e0fad53a231ce8d44c0137f21abd91abecd220eb2a62dac4efb520f7f89ac9",
+        "family": "S4",
+        "active": [
+          [
+            8,
+            15
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B40:C40",
+        "dependencies": {
+          "AttackS4Start": "b2243028ef29d8e8901941aeb2b7abf93b29ed23e36c9e37d047c048302d7e9d"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "a4fd70669dfe48ba7cb8ce07e6c7b21150cc33d42e4cf299feeb7d5cf1f78826",
+        "family": "S4",
+        "active": [
+          [
+            8,
+            15
+          ]
+        ],
+        "actionable": 49,
+        "cells": "B40:C40",
+        "dependencies": {
+          "AttackS4Start": "b2243028ef29d8e8901941aeb2b7abf93b29ed23e36c9e37d047c048302d7e9d"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "b78a5b3e06ae1e225045d1ba59d23917419bd43e32003eb23ba3ff0267327a16",
+        "family": "Hi4",
+        "active": [
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "actionable": 47,
+        "cells": "D40:E40",
+        "dependencies": {
+          "AttackHi4Start": "781da57f3400a93c131b06a3a3533763ee97bf0362961448a044a7d0a05200e5"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "3d7fcb29b353e9a9e245f7f4bd211a45c5ca48e22f5d5e9bdf254573cf5530f0",
+        "family": "Lw4",
+        "active": [
+          [
+            10,
+            12
+          ]
+        ],
+        "actionable": 45,
+        "cells": "F40:G40",
+        "dependencies": {
+          "AttackLw4Start": "0d0324ab8c33001fe530345c088e71e1712f3fc7c2c24176191cd92f24011876"
+        }
+      }
+    },
+    "wolf": {
+      "AttackS4S": {
+        "sha256": "c1fe407a48cde21eea7bd0f117fc3f755f1e1003d65585726c3ed063f651484f",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            16
+          ]
+        ],
+        "actionable": 48,
+        "cells": "B41:C41",
+        "dependencies": {
+          "AttackS4Start": "28bda12e4b719052e096c9b002a2b7e252c7af8776f3ac4831a28e6c2d28ac09"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "ce53fdd729317080fc1f11981f9c9bb23ad29c32b96d8ae6aaabb05dbcaa7d4a",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            16
+          ]
+        ],
+        "actionable": 48,
+        "cells": "B41:C41",
+        "dependencies": {
+          "AttackS4Start": "28bda12e4b719052e096c9b002a2b7e252c7af8776f3ac4831a28e6c2d28ac09"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "0d4d61a80abe9d1cdc51ca36908bb1d303fa964e0be545b89bd3a887d97efe73",
+        "family": "S4",
+        "active": [
+          [
+            10,
+            16
+          ]
+        ],
+        "actionable": 48,
+        "cells": "B41:C41",
+        "dependencies": {
+          "AttackS4Start": "28bda12e4b719052e096c9b002a2b7e252c7af8776f3ac4831a28e6c2d28ac09"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "34b1a1edbb1b06f25006dab97c3ce6bc32473107cc0825c4d7bf835d71fc8e4b",
+        "family": "Hi4",
+        "active": [
+          [
+            11,
+            24
+          ]
+        ],
+        "actionable": 48,
+        "cells": "D41:E41",
+        "dependencies": {
+          "AttackHi4Start": "838ecc702f12b6566ebc3d93bb3ab3f5193f1802f8c95ab804bd330e79ec9779"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "b9ab8c53c6bdb10cdc206314a8781e29e13d92ef49f81566e6f06c17ec21ff6b",
+        "family": "Lw4",
+        "active": [
+          [
+            8,
+            9
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "actionable": 42,
+        "cells": "F41:G41",
+        "dependencies": {
+          "AttackLw4Start": "8fffef66e2323dcf366d175d9b5345a05f8ad6c3048a4c4b954a5b4ab72f9a2f"
+        }
+      }
+    },
+    "yoshi": {
+      "AttackS4Hi": {
+        "sha256": "22767d5f70ba94b21921fad8c776797b2ee8f208b0c32d3f0853e2b4a7ab78c9",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 44,
+        "cells": "B42:C42",
+        "dependencies": {
+          "AttackS4Start": "60671718b2f48077c75959bb18f64f3b1134e8d72b953454b820431cc8e62182"
+        }
+      },
+      "AttackS4S": {
+        "sha256": "02f0b18b1768e4152a1e97c9f54ee7b1403bb5bff3f7b9be53e48a15c91a0a68",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 44,
+        "cells": "B42:C42",
+        "dependencies": {
+          "AttackS4Start": "60671718b2f48077c75959bb18f64f3b1134e8d72b953454b820431cc8e62182"
+        }
+      },
+      "AttackS4Lw": {
+        "sha256": "708bc6567d962b26ddcdb040736a0b21cfd2f318c695adff3698ea8ac6d198fe",
+        "family": "S4",
+        "active": [
+          [
+            14,
+            16
+          ]
+        ],
+        "actionable": 44,
+        "cells": "B42:C42",
+        "dependencies": {
+          "AttackS4Start": "60671718b2f48077c75959bb18f64f3b1134e8d72b953454b820431cc8e62182"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "5db370cc0de608214609ef1cd9ed40fccaadd63bbaa12125082f441345d0d19c",
+        "family": "Hi4",
+        "active": [
+          [
+            11,
+            16
+          ]
+        ],
+        "actionable": 40,
+        "cells": "D42:E42",
+        "dependencies": {
+          "AttackHi4Start": "258a09277e8e7960d9b395e7a105feecf3d5e4c27998df00e25b979023067c94"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "6f76281e1a191ff877db4b03fe1fa41f6e808c336a5bbfbfec24632580a8de77",
+        "family": "Lw4",
+        "active": [
+          [
+            7,
+            9
+          ],
+          [
+            21,
+            22
+          ]
+        ],
+        "actionable": 50,
+        "cells": "F42:G42",
+        "dependencies": {
+          "AttackLw4Start": "ab7cf22f755ee463aceb9f88b94acb5a732f51ebd223f6d3014ef12e2ef9ea7a"
+        }
+      }
+    },
+    "zelda": {
+      "AttackS4S": {
+        "sha256": "2480e8fa58015d2b06a66d1c3dcf5907c212511780d3d58f1962ab237d1596f3",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "actionable": 46,
+        "cells": "B43:C43",
+        "dependencies": {
+          "AttackS4Start": "9fe853c53e6c88cdfc181f389ad34422e310d10105c7c3d4db57978f78a3766b"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "55aceef4f5cc3fe00ca4312d69262133bdd1cecd61a5e4fa6be4bd5aae32cd17",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "actionable": 46,
+        "cells": "B43:C43",
+        "dependencies": {
+          "AttackS4Start": "9fe853c53e6c88cdfc181f389ad34422e310d10105c7c3d4db57978f78a3766b"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "453c8c32f015991b2e0947699101373d732618bdb90779d56df810bd9f870e4c",
+        "family": "S4",
+        "active": [
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "actionable": 46,
+        "cells": "B43:C43",
+        "dependencies": {
+          "AttackS4Start": "9fe853c53e6c88cdfc181f389ad34422e310d10105c7c3d4db57978f78a3766b"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "ba443f8684ba62b3b95616275e354345c829555e78e9acca50fda0aae5c7c7bd",
+        "family": "Hi4",
+        "active": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "actionable": 51,
+        "cells": "D43:E43",
+        "dependencies": {
+          "AttackHi4Start": "d3e249ff424f0161c020034a015cd194c4966bbefba0559ff846b0965ab02a41"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "f4f86d2d31e81c5fa4c76cc7cf584970069e74f0e34dedfcaa6306379497bbee",
+        "family": "Lw4",
+        "active": [
+          [
+            4,
+            5
+          ],
+          [
+            11,
+            14
+          ]
+        ],
+        "actionable": 32,
+        "cells": "F43:G43",
+        "dependencies": {
+          "AttackLw4Start": "cd35a7469c7034c65a60d1838b015a0675df9f7627aea515ac452f64b6972775"
+        }
+      }
+    },
+    "zero-suit-samus": {
+      "AttackS4S": {
+        "sha256": "5cddfbfcef20ff42807dd58f97fdc6a5e926bffd323f76c97276d4f7e36a9149",
+        "family": "S4",
+        "active": [
+          [
+            20,
+            24
+          ]
+        ],
+        "actionable": 66,
+        "cells": "B44:C44",
+        "dependencies": {
+          "AttackS4Start": "23aee66704cd6d185712fd74a7739517fc57fc7598b780f22bf41c90d43b8ee3"
+        }
+      },
+      "AttackS4S_1": {
+        "sha256": "dbd8043b3800221caa2f0872a986fad1ac504ac7f26a5114c59894f113178f42",
+        "family": "S4",
+        "active": [
+          [
+            20,
+            24
+          ]
+        ],
+        "actionable": 66,
+        "cells": "B44:C44",
+        "dependencies": {
+          "AttackS4Start": "23aee66704cd6d185712fd74a7739517fc57fc7598b780f22bf41c90d43b8ee3"
+        }
+      },
+      "AttackS4S_2": {
+        "sha256": "547d2f065785887fe326a4b20f8230a376c258b13c38c939d465b163b8b05b12",
+        "family": "S4",
+        "active": [
+          [
+            20,
+            24
+          ]
+        ],
+        "actionable": 66,
+        "cells": "B44:C44",
+        "dependencies": {
+          "AttackS4Start": "23aee66704cd6d185712fd74a7739517fc57fc7598b780f22bf41c90d43b8ee3"
+        }
+      },
+      "AttackHi4": {
+        "sha256": "9b19001bae4796c9ba3aa6135a506ff65713822fb149554ea6ac792b361a2b80",
+        "family": "Hi4",
+        "active": [
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            30
+          ]
+        ],
+        "actionable": 51,
+        "cells": "D44:E44",
+        "dependencies": {
+          "AttackHi4Start": "2001d28147d1f3801ecda5aa5a1f377c000df997aeaa5958b116a4db4d8a9cd0"
+        }
+      },
+      "AttackLw4": {
+        "sha256": "f665ea1c68a935c98f5b6a4fb316ed99273a01304d9f7cf6d3b31313bb054576",
+        "family": "Lw4",
+        "active": [
+          [
+            20,
+            24
+          ]
+        ],
+        "actionable": 39,
+        "cells": "F44:G44",
+        "dependencies": {
+          "AttackLw4Start": "0ff480c0374fee13ac854e1ecd75a18a7c49455c3dda6b25bb71fd97c4edc328"
+        }
+      }
+    }
+  }
+}

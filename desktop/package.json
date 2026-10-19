@@ -1,0 +1,12 @@
+{
+  "name": "pplus-dojo",
+  "version": "0.2.5",
+  "private": true,
+  "main": "main.cjs",
+  "description": "Offline Project+ reference and study app",
+  "author": "P+ Dojo",
+  "license": "MIT",
+  "dependencies": {
+    "electron-updater": "^6.8.9"
+  }
+}

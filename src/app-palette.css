@@ -1,0 +1,405 @@
+/* Shared UI palette. Keep category, review, and warning colors semantic. */
+:root {
+  --app-background: #071b20;
+  --surface-deep: #0b2228;
+  --surface: #10282c;
+  --surface-raised: #123036;
+  --surface-control: #0e2a2e;
+  --surface-hover: #174247;
+  --surface-selected: #50eadb18;
+  --text-primary: #e0eeed;
+  --text-secondary: #a9c4c1;
+  --text-muted: #8fadaa;
+  --border-default: #28484a;
+  --accent-ink: #062223;
+  --focus-ring: #b4fff0;
+  --text: var(--text-primary);
+  --muted: var(--text-muted);
+  --line: var(--border-default);
+  --panel: var(--surface);
+}
+
+body {
+  background: radial-gradient(ellipse at 75% 20%, #174c5060, transparent 58%), var(--app-background);
+}
+
+::selection {
+  background: #50eadb44;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline-color: var(--focus-ring);
+}
+
+.button.primary {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+
+.button.primary:hover {
+  background: var(--focus-ring);
+}
+
+.button.secondary {
+  color: var(--text-secondary);
+  background: var(--surface-raised);
+  border-color: var(--border-default);
+}
+
+.button.secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+}
+
+.brand-mark,
+.skip-link,
+.playback-buttons .play-button {
+  color: var(--accent-ink);
+}
+
+.reference-tabs a {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+/* Study used an older slate surface and a separate cyan for selected decks. */
+.study-app .study-page .study-decks button {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.study-app .study-page .study-decks button[aria-pressed="true"] {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.study-app .study-page .filter-tabs button {
+  color: var(--text-muted);
+}
+
+.study-app .study-page .filter-tabs button.selected {
+  color: var(--accent);
+  background: var(--surface-selected);
+  border-color: var(--border-default);
+}
+
+.study-app .study-page .filter-tabs button span {
+  background: var(--surface-raised);
+}
+
+.study-app .study-page label,
+.study-app .study-page .study-filter-field {
+  color: var(--text-secondary);
+}
+
+.study-app .study-page select,
+.study-app .study-page .study-search > div,
+.study-app .study-page .study-fighter-combobox {
+  color: var(--text-primary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.study-app .study-page .study-summary,
+.study-app .study-page .study-library,
+.study-app .study-page .study-session,
+.study-app .study-page .study-settings {
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.study-app .study-page .study-summary span,
+.study-app .study-page .study-library header span {
+  color: var(--text-muted);
+}
+
+.study-app .study-page .study-library > header,
+.study-app .study-page .study-card-footer {
+  border-color: var(--border-default);
+}
+
+.study-app .study-page .study-card-list > button {
+  color: var(--text-primary);
+  border-bottom-color: var(--border-default);
+}
+
+.study-app .study-page .study-card-list > button:hover {
+  background: var(--surface-hover);
+}
+
+.study-app .study-page .study-card-list > button.selected {
+  background: var(--surface-selected);
+  box-shadow: inset 3px 0 var(--accent);
+}
+
+.study-app .study-page .study-library footer button,
+.study-app .study-page .study-card-footer button {
+  color: var(--text-secondary);
+  background: var(--surface-raised);
+  border-color: var(--border-default);
+}
+
+.study-app .study-page .study-answer {
+  background: var(--surface-raised);
+  border-left-color: var(--accent);
+}
+
+.study-app .study-page .study-source a,
+.study-app .study-page .study-reference-actions button,
+.study-app .study-page .study-empty svg {
+  color: var(--accent);
+}
+
+.study-app .study-page .study-status {
+  color: var(--text-secondary);
+}
+
+.study-app .study-page .study-settings > summary {
+  color: var(--text-primary);
+}
+
+.study-app .study-page .study-bubble-label {
+  color: var(--text-secondary);
+  background: var(--surface-raised);
+}
+
+.study-app .study-page .study-settings-body {
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.study-app .study-animation-dialog {
+  background: var(--surface-deep);
+  border-color: var(--border-default);
+}
+
+/* Account controls use the same surface and border shades as the rest of the app. */
+.sidebar .account-trigger {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.sidebar .account-dialog {
+  color: var(--text-primary);
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.sidebar .account-dialog section {
+  border-bottom-color: var(--border-default);
+}
+
+.sidebar .account-dialog label {
+  color: var(--text-secondary);
+}
+
+.sidebar .account-dialog input:not([type="checkbox"]) {
+  color: var(--text-primary);
+  background: var(--surface-deep);
+  border-color: var(--border-default);
+}
+
+.sidebar .account-dialog .account-email-toggle {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.sidebar .account-dialog .preload-toggle input,
+.sidebar .account-dialog progress,
+.desktop-startup progress {
+  accent-color: var(--accent);
+}
+
+.sidebar .account-link,
+.sidebar .account-notice,
+.desktop-startup h1 {
+  color: var(--accent);
+}
+
+/* Keep primary view tabs consistent with the shared selected color. */
+.compendium-app .knowledge-view-tabs button {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.compendium-app .knowledge-view-tabs button[aria-selected="true"] {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.compendium-app .knowledge-tabs a.selected span {
+  color: var(--accent-ink);
+  background: #06222326;
+}
+
+.compendium-app .knowledge-summary {
+  background: linear-gradient(115deg, var(--surface-raised), var(--surface));
+  border-color: var(--border-default);
+}
+
+.compendium-app .knowledge-tile,
+.compendium-app .knowledge-panel,
+.compendium-app .knowledge-category {
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.compendium-app .knowledge-filters .knowledge-search,
+.compendium-app .knowledge-filters select {
+  color: var(--text-primary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+/* Fighter details retain distinct data colors while using the shared surfaces. */
+.fighter-app .move-summary-item,
+.fighter-app .move-view-hitbox-layout > .hitbox-section {
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.fighter-app .move-summary-item span,
+.fighter-app .frame-label,
+.fighter-app .raw-values {
+  color: var(--text-muted);
+}
+
+.fighter-app .move-summary-item strong {
+  color: var(--text-primary);
+}
+
+.fighter-app .portrait-editor {
+  color: var(--text-primary);
+  background: linear-gradient(110deg, var(--surface-selected), var(--surface));
+  border-color: var(--border-default);
+}
+
+.fighter-app .portrait-editor-heading h3,
+.fighter-app .portrait-editor-controls label strong {
+  color: var(--text-primary);
+}
+
+.fighter-app .portrait-editor-heading p,
+.fighter-app .portrait-editor-controls label,
+.fighter-app .portrait-reset-button {
+  color: var(--text-muted);
+}
+
+.fighter-app .no-data-panel {
+  color: var(--text-secondary);
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.fighter-app .no-data-panel h2 {
+  color: var(--text-primary);
+}
+
+.fighter-app .no-data-panel p {
+  color: var(--text-muted);
+}
+
+.fighter-app .no-data-panel > svg {
+  color: var(--accent);
+}
+
+/* Attribute and reference controls use the same teal surface family. */
+.attribute-app .attribute-section-tabs button {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.attribute-app .attribute-section-tabs button[aria-pressed="true"] {
+  color: var(--accent);
+  background: var(--surface-selected);
+  border-color: var(--accent);
+}
+
+.attribute-app .attribute-section-card,
+.attribute-app .attribute-scatter-card,
+.attribute-app .dodge-panel {
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.attribute-app .chart-view-switch button,
+.attribute-app .chart-selections button,
+.attribute-app .chart-member-list button,
+.attribute-app .scatter-view-switch button,
+.attribute-app .scatter-navigation button {
+  color: var(--text-secondary);
+  background: var(--surface-control);
+  border-color: var(--border-default);
+}
+
+.attribute-app .chart-view-switch button[aria-pressed="true"] {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+
+/* About and resource cards share the app's teal surfaces. */
+.document-page .setup-status,
+.document-page .glossary-grid section,
+.document-page .setup-step pre,
+.document-page .setup-step code:not(pre code) {
+  color: var(--text-primary);
+  background: var(--surface);
+  border-color: var(--border-default);
+}
+
+.document-page .setup-status {
+  color: var(--accent);
+}
+
+.resource-card-grid article {
+  background: linear-gradient(135deg, var(--surface-raised), var(--surface));
+  border-color: var(--border-default);
+  border-top-color: var(--accent);
+}
+
+.dataset-banner.success {
+  border-color: var(--accent);
+  background: var(--surface-selected);
+}
+
+.fighter-grid .fighter-diamond:focus-visible {
+  background: var(--accent);
+  filter: drop-shadow(0 0 6px var(--focus-ring));
+}
+
+/* Use one selected-tab color across reference, study, fighter, and progress views. */
+:is(
+  .reference-tabs a[aria-current="page"],
+  .study-app .study-page .study-decks button[aria-pressed="true"],
+  .study-app .study-page .filter-tabs button.selected,
+  .fighter-app .page-tabs button.selected,
+  .compendium-app .knowledge-view-tabs button[aria-selected="true"],
+  .compendium-app .knowledge-tabs a.selected,
+  .attribute-app .attribute-section-tabs button[aria-pressed="true"],
+  .attribute-app .chart-view-switch button[aria-pressed="true"],
+  .attribute-app .scatter-view-switch button[aria-pressed="true"],
+  .attribute-app .view-segment a[aria-current="page"]
+) {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Fighter tabs keep their original underline treatment instead of a filled pill. */
+.fighter-app .move-sidebar .page-tabs button.selected {
+  color: var(--accent);
+  background: transparent;
+  border-bottom-color: var(--accent);
+}

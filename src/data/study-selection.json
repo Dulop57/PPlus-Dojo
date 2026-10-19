@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "mergeMainRankings": true,
+  "entries": [
+    {
+      "id": "CS-bff17e10",
+      "deck": "attributes",
+      "topic": "Move stats (all attack groups)",
+      "field": "Active Frames"
+    },
+    {
+      "id": "CS-35f66fed",
+      "deck": "attributes",
+      "topic": "Move stats (all attack groups)",
+      "field": "First Actionable Frame"
+    },
+    {
+      "id": "CS-68b2f29d",
+      "deck": "attributes",
+      "topic": "Move stats (all attack groups)",
+      "field": "Autocancel frames"
+    },
+    {
+      "id": "CS-50c42e06",
+      "deck": "attributes",
+      "topic": "Move stats (all attack groups)",
+      "field": "L-cancelled landing lag"
+    },
+    {
+      "id": "CS-c03b519e",
+      "deck": "attributes",
+      "topic": "Move stats (all attack groups)",
+      "field": "Throw event frames"
+    },
+    {
+      "id": "CS-5feca0e9",
+      "deck": "attributes",
+      "topic": "Attributes · Dodges",
+      "field": "Actionable"
+    },
+    {
+      "id": "CS-9e887d41",
+      "deck": "attributes",
+      "topic": "Attributes · Dodges",
+      "field": "Intangible frames"
+    },
+    {
+      "id": "CS-84980f8c",
+      "deck": "attributes",
+      "topic": "Attributes · Dodges",
+      "field": "Ledge grab"
+    },
+    {
+      "id": "CS-12fe8854",
+      "deck": "attributes",
+      "topic": "Attributes · Grab Timings",
+      "field": "Active Frames"
+    },
+    {
+      "id": "CS-63339172",
+      "deck": "attributes",
+      "topic": "Attributes · Grab Timings",
+      "field": "SAF"
+    },
+    {
+      "id": "CS-e2ce1ba6",
+      "deck": "attributes",
+      "topic": "Attributes · Ledge stuff",
+      "field": "Frame"
+    },
+    {
+      "id": "CS-cda20f9e",
+      "deck": "attributes",
+      "topic": "Attributes · Ledge stuff",
+      "field": "Hit frames"
+    },
+    {
+      "id": "CS-14798404",
+      "deck": "attributes",
+      "topic": "Attributes · Ledge stuff",
+      "field": "Ledge available"
+    },
+    {
+      "id": "CS-acb3bc21",
+      "deck": "attributes",
+      "topic": "Attributes · Ledge stuff",
+      "field": "Note"
+    },
+    {
+      "id": "CS-76c55325",
+      "deck": "attributes",
+      "topic": "Attributes · Ledge stuff",
+      "field": "SAF"
+    },
+    {
+      "id": "CS-c574f1d8",
+      "deck": "attributes",
+      "topic": "Attributes · Ledge stuff",
+      "field": "Vulnerable"
+    },
+    {
+      "id": "CS-832c404d",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Boost Grab"
+    },
+    {
+      "id": "CS-f216c5b2",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "DACUS"
+    },
+    {
+      "id": "CS-488863b5",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Dash Acceleration"
+    },
+    {
+      "id": "CS-722b9620",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Dash Dance Avg. Velocity"
+    },
+    {
+      "id": "CS-2762aa61",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Dash Dance Length"
+    },
+    {
+      "id": "CS-dbb95b11",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Distance to Max Ground Speed"
+    },
+    {
+      "id": "CS-098eb740",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Double Jump Height"
+    },
+    {
+      "id": "CS-3043a5cc",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Extended Dash Dance (20 Frames)"
+    },
+    {
+      "id": "CS-fc02561b",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Fast Fall Speed"
+    },
+    {
+      "id": "CS-23cd66fb",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Fast Fall-Max Fall Speed"
+    },
+    {
+      "id": "CS-61cca367",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Frames to Max Ground Speed"
+    },
+    {
+      "id": "CS-a647a026",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Full Jump Height"
+    },
+    {
+      "id": "CS-e4dc4d28",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Glide Toss"
+    },
+    {
+      "id": "CS-936ac994",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Gravity (Falling Acceleration)"
+    },
+    {
+      "id": "CS-6c50d210",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Ground Friction"
+    },
+    {
+      "id": "CS-ab535cb4",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Horizontal Air Accel."
+    },
+    {
+      "id": "CS-fcf303e0",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Horizontal Air Drag"
+    },
+    {
+      "id": "CS-bf58d9bd",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Initial Dash Speed"
+    },
+    {
+      "id": "CS-37ad85a9",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Max Dash/Run Speed"
+    },
+    {
+      "id": "CS-ec910f1c",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Max Fall Speed"
+    },
+    {
+      "id": "CS-d2c61913",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Max Horizontal Air Speed"
+    },
+    {
+      "id": "CS-0364e277",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "SH FF Time"
+    },
+    {
+      "id": "CS-14f8753c",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Short Hop Height"
+    },
+    {
+      "id": "CS-3830d2fc",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Walk Speed"
+    },
+    {
+      "id": "CS-19e222de",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Walljump Height"
+    },
+    {
+      "id": "CS-f7ba52a6",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Wavedash"
+    },
+    {
+      "id": "CS-ec13c284",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Weight"
+    },
+    {
+      "id": "CS-0ee41afd",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Attribute"
+    },
+    {
+      "id": "CS-7033e943",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Crawl options"
+    },
+    {
+      "id": "CS-22b66a3b",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Dash length"
+    },
+    {
+      "id": "CS-5ca12710",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Empty landing lag"
+    },
+    {
+      "id": "CS-d5a87e27",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Jumpsquat"
+    },
+    {
+      "id": "CS-a36cb6d8",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Number of jumps"
+    },
+    {
+      "id": "CS-1763eb9b",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Rank"
+    },
+    {
+      "id": "CS-b5791794",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Wall movement"
+    },
+    {
+      "id": "CS-42a95996",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Short hop"
+    },
+    {
+      "id": "CS-715773c7",
+      "deck": "attributes",
+      "topic": "Attributes · Main",
+      "field": "Short hop + fastfall"
+    },
+    {
+      "id": "ST-c115729e",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Bottom blastzone distance (summary)"
+    },
+    {
+      "id": "ST-a382afdd",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Highest platform height"
+    },
+    {
+      "id": "ST-35b4f9fb",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Lowest platform height"
+    },
+    {
+      "id": "ST-9645c862",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Platform width"
+    },
+    {
+      "id": "ST-788cc5aa",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Right ledge to side blastzone"
+    },
+    {
+      "id": "ST-efe92b79",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Stage width"
+    },
+    {
+      "id": "ST-49ce74e8",
+      "deck": "stages",
+      "topic": "Stage stats",
+      "field": "Top blastzone distance (summary)"
+    },
+    {
+      "id": "HB-85c6ab6a",
+      "deck": "hitboxes",
+      "topic": "Hitbubble, grab and throw parameters",
+      "field": "Bubble data"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+import { cp, mkdir, readFile, writeFile, access } from 'node:fs/promises';
+import { resolve, join } from 'node:path';
+import {basename} from 'node:path';
+import {zipDirectory} from './zip-directory.mjs';
+import { checkSite } from './check-site.mjs';
+import { validateDataset } from './validate-data.mjs';
+const preview=process.argv.includes('--preview'),root=resolve('.'),artifacts=join(root,'artifacts');
+await checkSite(join(root,'dist'));
+if(!preview)await validateDataset(join(root,'dist/data'),{release:true});
+const executable=join(root,'target/release/pplus-dojo.exe');
+await access(executable).catch(()=>{throw new Error('Build the launcher first: cargo build --release -p pplus-dojo');});
+const stamp=new Date().toISOString().replaceAll(/[:.]/g,'-');
+const folder=join(artifacts,`windows-${stamp}`),name=preview?'P+ Dojo - Setup Preview':'P+ Dojo';
+const packageRoot=join(folder,name);
+await mkdir(packageRoot,{recursive:true});
+await cp(join(root,'dist'),join(packageRoot,'app'),{recursive:true});
+await cp(executable,join(packageRoot,'P+ Dojo.exe'));
+for(const file of ['README.md','LICENSE','THIRD-PARTY-NOTICES.md'])await cp(join(root,file),join(packageRoot,file));
+await writeFile(join(packageRoot,'START HERE.txt'),`${preview?'PREVIEW — DATA ACCURACY NOT YET VERIFIED\n\n':''}Extract this entire ZIP. Double-click P+ Dojo.exe and keep its window open.\nThe app opens in your default browser and runs only on this PC. No internet or development tools are needed.\nClose the launcher window to stop.\n\n${preview?'Bundled extracted data is marked unverified until upstream and in-game comparisons are complete.\nThe Viewer sandbox is separately labeled synthetic test geometry, not game data.\nAccuracy requires comparisons with upstream and in-game results.\n':''}`);
+// Rust's static GNU build should depend only on Windows system DLLs. Packaging QA verifies this.
+const zip=join(artifacts,preview?'PPlus-Dojo-Windows-Setup-Preview.zip':'PPlus-Dojo-Windows.zip');
+await zipDirectory(packageRoot,zip,basename(packageRoot));
+console.log(`Created ${zip}${preview?' (setup preview, not a data release)':''}`);

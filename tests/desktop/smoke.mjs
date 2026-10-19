@@ -1,0 +1,38 @@
+import {_electron as electron,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+import {mkdir,rm} from 'node:fs/promises';
+import {resolve} from 'node:path';
+const profile=resolve('artifacts/desktop-smoke-profile');await mkdir(profile,{recursive:true});
+assert.ok(profile.startsWith(resolve('artifacts')+'\\')||profile.startsWith(resolve('artifacts')+'/'));
+const launch=()=>electron.launch({...(process.env.DOJO_DESKTOP_EXECUTABLE?{executablePath:process.env.DOJO_DESKTOP_EXECUTABLE,args:[`--user-data-dir=${profile}`]}:{args:['.',`--user-data-dir=${profile}`]}),env:{...process.env,DOJO_DESKTOP_TEST:'1'},timeout:60000});
+let app;
+try{
+  app=await launch();const page=await app.firstWindow(),errors=[];await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].webContents.setBackgroundThrottling(false));
+  page.on('pageerror',error=>errors.push(error.message));
+  await page.locator('.diamond-board').waitFor({timeout:60000});
+  assert.equal(new URL(page.url()).protocol,'dojo:');
+  const isolation=await page.evaluate(()=>({node:typeof window.require,bridge:typeof window.dojoDesktop,secure:window.isSecureContext}));
+  assert.equal(isolation.node,'undefined');assert.equal(isolation.bridge,'object');assert.equal(isolation.secure,true);
+  await page.getByRole('button',{name:'Account & app'}).click();
+  const info=await page.evaluate(()=>window.dojoDesktop.info());
+  if(info.firebase)await page.getByLabel('Email',{exact:true}).waitFor();else await page.getByText('Accounts are awaiting Firebase setup.').waitFor();
+  assert.equal(await page.getByRole('checkbox',{name:'Preload all data'}).isChecked(),false);
+  if(!process.env.DOJO_DESKTOP_EXECUTABLE)await page.screenshot({path:'artifacts/desktop-settings.png'});
+  await page.getByRole('checkbox',{name:'Preload all data'}).check();
+  await expect(page.locator('progress')).toHaveCount(1);
+  await page.getByRole('checkbox',{name:'Preload all data'}).uncheck();
+  await expect(page.locator('progress')).toHaveCount(0);
+  await page.getByRole('button',{name:'Close account and app settings'}).click();
+  await page.getByRole('link',{name:'Study',exact:true}).click();
+  await page.getByRole('button',{name:'Study now',exact:true}).click({timeout:60000});
+  await page.getByRole('button',{name:'Reveal answer',exact:true}).click();
+  await page.getByRole('button',{name:/^Good/}).click();
+  await expect(page.locator('.study-summary')).toContainText('1cards studied');
+  if(!process.env.DOJO_DESKTOP_EXECUTABLE)await page.screenshot({path:'artifacts/desktop-smoke.png'});
+  assert.deepEqual(errors,[]);
+  await app.close();app=await launch();const restarted=await app.firstWindow();await restarted.getByRole('button',{name:'Account & app'}).waitFor({timeout:60000});
+  await restarted.getByRole('link',{name:'Study',exact:true}).click();
+  await expect(restarted.locator('.study-summary')).toContainText('1cards studied');
+  assert.equal(await restarted.evaluate(async()=>{const db=await new Promise((resolve,reject)=>{const r=indexedDB.open('pplus-dojo-study');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});return new Promise((resolve,reject)=>{const r=db.transaction('reviews').objectStore('reviews').count();r.onsuccess=()=>{resolve(r.result);db.close();};r.onerror=()=>reject(r.error);});}),1);
+  console.log('Desktop smoke passed: local assets, secure isolated window, settings, offline study, persistent profile.');
+}finally{if(app)await app.close();await rm(profile,{recursive:true,force:true});}

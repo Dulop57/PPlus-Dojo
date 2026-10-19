@@ -1,0 +1,10 @@
+[workspace]
+members = ["native/exporter", "native/launcher"]
+resolver = "2"
+exclude = ["native/vendor/brawllib_rs"]
+
+[patch.crates-io]
+brawllib_rs = { path = "native/vendor/brawllib_rs" }
+
+[profile.release]
+strip = true

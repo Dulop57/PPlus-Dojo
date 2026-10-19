@@ -1,0 +1,41 @@
+name: Windows portable package
+on:
+  workflow_dispatch:
+    inputs:
+      dataset_url:
+        description: 'Public HTTPS verified dataset ZIP. Blank builds setup preview.'
+        required: false
+        type: string
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: npm ci
+      - name: Import verified dataset
+        if: inputs.dataset_url != ''
+        env:
+          DATASET_URL: ${{ inputs.dataset_url }}
+        run: node scripts/fetch-dataset.mjs
+      - run: npm test
+      - run: cargo test --workspace --locked
+      - run: cargo build --release -p pplus-dojo --locked
+      - run: npm run build
+      - name: Package verified release
+        if: inputs.dataset_url != ''
+        run: npm run package:windows
+      - name: Package setup preview
+        if: inputs.dataset_url == ''
+        run: npm run package:windows -- --preview
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PPlus-Dojo-Windows
+          path: artifacts/*.zip

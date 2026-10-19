@@ -1,0 +1,6 @@
+import type {FrameRange} from './types';
+export type StudyHit={id:string;moveId:string;path:string;internalName:string;kind:'hit'|'grab'|'throw';hitboxId:number|null;frame:number;boxIndex:number|null;radius?:number;ranges:FrameRange[];values:Record<string,unknown>;view?:'full'};
+export type StudyFighter={schemaVersion:1;id:string;name:string;sourcePath:string;attributes:Record<string,unknown>;hits:StudyHit[];moves:{id:string;internalName:string;path:string;stats:Record<string,unknown>;warnings:string[];view?:'full'}[];warnings:string[]};
+export type StudyIndex={schemaVersion:1;version:string;verification:string;sourceFingerprint:string;generatedAt:string;fighters:{id:string;name:string;path:string;cards:number;bubbles:number;moves:number;sha256:string}[]};
+export type BubbleAnswer={id:number;type:'Hit'|'Grab';damage:number|null;angle:number|null;kbg:number|null;bkb:number|null;wdsk:number|null;radius:number};
+export type StudyCard={id:string;deck:'attributes'|'hitboxes'|'stages';subjectId:string;subject:string;topic:string;question:string;answer:string;exact?:string;note?:string;source:string;href:string;hit?:StudyHit;bubbleAnswer?:BubbleAnswer;field:string;move?:{id:string;name:string;category:string}};

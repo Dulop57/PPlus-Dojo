@@ -1,0 +1,51 @@
+name: Standalone Windows release
+on:
+  workflow_dispatch:
+    inputs:
+      dataset_url:
+        description: 'Public HTTPS URL of the verified dataset ZIP'
+        required: true
+        type: string
+      publish:
+        description: 'Publish installer and updater files to GitHub Releases'
+        default: false
+        type: boolean
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Import bundled dataset
+        env:
+          DATASET_URL: ${{ inputs.dataset_url }}
+        run: node scripts/fetch-dataset.mjs
+      - run: npm test
+      - run: npm run desktop:test
+      - run: npm run build
+      - name: Build standalone installer
+        if: inputs.publish == false
+        env:
+          DOJO_RELEASE_REPOSITORY: ${{ github.repository }}
+          DOJO_FIREBASE_CONFIG: ${{ vars.DOJO_FIREBASE_CONFIG }}
+        run: npm run desktop:package
+      - name: Build and publish update
+        if: inputs.publish == true
+        env:
+          DOJO_RELEASE_REPOSITORY: ${{ github.repository }}
+          DOJO_FIREBASE_CONFIG: ${{ vars.DOJO_FIREBASE_CONFIG }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run desktop:package -- --publish
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PPlus-Dojo-Standalone
+          path: |
+            artifacts/desktop/*.exe
+            artifacts/desktop/*.blockmap
+            artifacts/desktop/latest.yml

@@ -1,0 +1,36 @@
+import {_electron as electron,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+import {readFile,mkdir,rm} from 'node:fs/promises';
+import {resolve,sep} from 'node:path';
+import {gzipSync,gunzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
+const profile=resolve('artifacts/desktop-preload-profile');assert.ok(profile.startsWith(resolve('artifacts')+sep));await mkdir(profile,{recursive:true});
+const sourceManifest=JSON.parse(await readFile('dist/data/manifest.json','utf8'));
+const index=sourceManifest.fighters[0],fighter=JSON.parse(await readFile(`dist/data/${index.path}`,'utf8'));
+const entry=fighter.moves.find(move=>move.totalFrames>0),source=JSON.parse(gunzipSync(await readFile(`dist/data/${entry.path}`)));
+assert.ok(source.frames);
+const base={...source,frames:source.frames.slice(0,8)},bytes=gzipSync(JSON.stringify(base));
+const alias={schemaVersion:1,fighterId:base.fighterId,moveId:'preload-fixture-alias',name:'Wait1_1',sharedMove:{path:'fixture/move.json.gz',sha256:createHash('sha256').update(bytes).digest('hex')}};
+const testFighter={...fighter,moves:[{...entry,path:'fixture/move.json.gz',totalFrames:base.frames.length},{...entry,id:alias.moveId,internalName:alias.name,path:'fixture/alias.json.gz',totalFrames:base.frames.length}]};
+const manifest={...sourceManifest,fighters:[{...index,path:'fixture/index.json',moveCount:2}]};
+const files=new Map([['manifest.json',Buffer.from(JSON.stringify(manifest))],['fixture/index.json',Buffer.from(JSON.stringify(testFighter))],['fixture/move.json.gz',bytes],['fixture/alias.json.gz',gzipSync(JSON.stringify(alias))]]);
+let app,reads=0;
+try{
+  app=await electron.launch({args:['.','--no-preload',`--user-data-dir=${profile}`],env:{...process.env,DOJO_DESKTOP_TEST:'1'},timeout:60000});const page=await app.firstWindow();
+  await page.getByRole('button',{name:'Account & app'}).waitFor({timeout:60000});
+  await page.route('dojo://app/data/**',async route=>{reads++;const key=new URL(route.request().url()).pathname.slice('/data/'.length),body=files.get(key);await route.fulfill({status:body?200:404,body:body??'Missing test fixture',contentType:'application/octet-stream'});});
+  const selection=JSON.parse(await readFile('src/data/study-selection.json','utf8'));
+  await page.route('dojo://app/study/**',route=>route.fulfill({json:{schemaVersion:1,version:'3.2',verification:'unverified',fighters:[],cards:[],subjects:[],selectionFingerprint:createHash('sha256').update(JSON.stringify(selection)).digest('hex'),complete:false}}));
+  await page.reload();await page.getByRole('button',{name:'Account & app'}).click();
+  await page.getByRole('checkbox',{name:'Preload all data'}).check();
+  await page.getByText('All fighter data and study catalogs are ready.',{exact:true}).waitFor({timeout:60000});
+  const preparedReads=reads;
+  await page.getByRole('button',{name:'Close account and app settings'}).click();
+  await page.evaluate(hash=>location.hash=hash,`#/fighters/${base.fighterId}/${base.moveId}`);
+  await expect(page.getByRole('slider',{name:'Animation frame'})).toBeVisible();
+  await page.evaluate(hash=>location.hash=hash,`#/fighters/${base.fighterId}/${alias.moveId}`);
+  await expect(page.locator('.frame-counter')).toContainText(`/ ${base.frames.length}`);assert.equal(reads,preparedReads,'preloaded navigation must not fetch indexes or animation files');
+  await page.getByRole('button',{name:'Account & app'}).click();await page.getByRole('checkbox',{name:'Preload all data'}).uncheck();await page.getByRole('button',{name:'Close account and app settings'}).click();
+  await page.evaluate(hash=>location.hash=hash,`#/fighters/${base.fighterId}/${base.moveId}`);await expect(page.getByRole('slider',{name:'Animation frame'})).toBeVisible();assert.ok(reads>preparedReads,'disabling preload must discard retained animations');
+  console.log('Desktop preload passed: complete preparation, packed geometry, shared aliases, navigation without dataset fetches, cache release.');
+}finally{if(app)await app.close();await rm(profile,{recursive:true,force:true});}

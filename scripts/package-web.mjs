@@ -1,0 +1,12 @@
+import {mkdir} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {zipDirectory} from './zip-directory.mjs';
+import {checkSite} from './check-site.mjs';
+import {validateDataset} from './validate-data.mjs';
+const root=resolve('.'),preview=process.argv.includes('--preview');
+await checkSite(join(root,'dist'));
+if(!preview)await validateDataset(join(root,'dist/data'),{release:true});
+const artifacts=join(root,'artifacts');await mkdir(artifacts,{recursive:true});
+const zip=join(artifacts,preview?'PPlus-Dojo-Web-Setup-Preview.zip':'PPlus-Dojo-Web.zip');
+await zipDirectory(join(root,'dist'),zip);
+console.log(`Created ${zip}${preview?' (setup preview)':''}`);

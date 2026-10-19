@@ -1,0 +1,259 @@
+use fancy_slice::FancySlice;
+
+use crate::chr0::*;
+use crate::mdl0::*;
+use crate::plt0::*;
+use crate::resources;
+use crate::util;
+
+#[rustfmt::skip]
+pub(crate) fn bres(data: FancySlice) -> Bres {
+    let endian         = data.u16_be(0x4);
+    let version        = data.u16_be(0x6);
+    //let size         = data.u32_be(0x8);
+    let root_offset    = data.u16_be(0xc);
+    //let num_sections = data.u16_be(0xe);
+
+    let children = bres_group(data.relative_fancy_slice(root_offset as usize ..));
+    Bres { endian, version, children }
+}
+
+fn bres_group(data: FancySlice) -> Vec<BresChild> {
+    resources::resources(data.relative_fancy_slice(ROOT_HEADER_SIZE..))
+        .into_iter()
+        .map(|resource| {
+            let child_data =
+                data.relative_fancy_slice(ROOT_HEADER_SIZE + resource.data_offset as usize..);
+
+            let tag = util::parse_tag(child_data.relative_slice(..));
+            let child_data = match tag.as_ref() {
+                "CHR0" => BresChildData::Chr0(chr0(child_data)),
+                "MDL0" => BresChildData::Mdl0(mdl0(child_data)),
+                "PLT0" => BresChildData::Plt0(plt0(child_data)),
+                "" => BresChildData::Bres(bres_group(
+                    data.relative_fancy_slice(resource.data_offset as usize..),
+                )), // TODO: I suspect the match on "" is succeeding by accident
+                _ => BresChildData::Unknown(tag),
+            };
+
+            BresChild {
+                name: resource.string,
+                data: child_data,
+            }
+        })
+        .collect()
+}
+
+// Brawlbox has this split into three structs: BRESHeader, BRESEntry and ROOTHeader
+// BRESEntry is commented out, so that appears wrong
+// BRESHeader and RootHeader are combined because without BRESEntry they appear to be sequential
+const BRES_HEADER_SIZE: usize = 0x10;
+#[derive(Clone, Debug)]
+pub struct Bres {
+    pub endian: u16,
+    pub version: u16,
+    pub children: Vec<BresChild>,
+}
+
+impl Bres {
+    pub fn compile(&self) -> Vec<u8> {
+        let mut output = vec![];
+        let mut root_output: Vec<u8> = vec![];
+
+        let root_size = ROOT_HEADER_SIZE
+            + resources::RESOURCE_HEADER_SIZE
+            + resources::RESOURCE_SIZE
+            + self.children.iter().map(|x| x.bres_size()).sum::<usize>();
+
+        let bres_size_leafless = BRES_HEADER_SIZE + root_size;
+
+        let mut bres_size_leafless_buffered = bres_size_leafless;
+        while bres_size_leafless_buffered % 0x20 != 0 {
+            bres_size_leafless_buffered += 1; // TODO: arithmeticize the loop
+        }
+
+        // compile children
+        let mut leaf_children_output: Vec<Vec<u8>> = vec![];
+        let mut leaf_children_size = 0;
+        let mut to_process = vec![&self.children];
+        while !to_process.is_empty() {
+            let children = to_process.remove(0);
+            let resource_header_offset = BRES_HEADER_SIZE + ROOT_HEADER_SIZE + root_output.len();
+
+            // create resources header
+            let resources_size =
+                (children.len() + 1) * resources::RESOURCE_SIZE + resources::RESOURCE_HEADER_SIZE; // includes the dummy child
+            root_output.extend(i32::to_be_bytes(resources_size as i32));
+            root_output.extend(i32::to_be_bytes(children.len() as i32)); // num_children
+
+            // insert the dummy resource
+            let root_resource = 1;
+            root_output.extend([0xff, 0xff]); // id
+            root_output.extend(u16::to_be_bytes(0)); // flag
+            root_output.extend(u16::to_be_bytes(root_resource)); // left_index
+            root_output.extend(u16::to_be_bytes(0)); // right_index
+            root_output.extend(i32::to_be_bytes(0)); // string_offset
+            root_output.extend(i32::to_be_bytes(0)); // data_offset
+
+            let mut data_offset_current = resources_size;
+            for (i, child) in children.iter().enumerate() {
+                let data_offset = match child.data {
+                    BresChildData::Bres(_) => data_offset_current as i32,
+                    _ => {
+                        bres_size_leafless_buffered as i32 - resource_header_offset as i32
+                            + leaf_children_size
+                    }
+                };
+
+                match child.data {
+                    BresChildData::Bres(ref children) => {
+                        to_process.push(children);
+                        data_offset_current += (children.len() + 1) * resources::RESOURCE_SIZE
+                            + resources::RESOURCE_HEADER_SIZE;
+                    }
+                    _ => {
+                        // calculate offset to child
+                        let mut child_offset = bres_size_leafless as i32;
+                        while child_offset % 0x20 != 0 {
+                            child_offset += 1; // TODO: arithmeticize the loop
+                        }
+                        child_offset += leaf_children_size;
+
+                        let child_output = child.compile(-child_offset);
+
+                        leaf_children_size = if let Some(result) =
+                            leaf_children_size.checked_add(child_output.len() as i32)
+                        {
+                            result
+                        } else {
+                            panic!("BRES over 2 ^ 32 bytes"); // TODO: Make this an Err(_)
+                        };
+
+                        leaf_children_output.push(child_output);
+                    }
+                }
+
+                let mut name = child.name.clone();
+                let index_component = (name.len() as u16 - 1) << 3;
+                let char_component =
+                    most_significant_different_bit(name.pop().unwrap() as u8, 0) as u16;
+                let id = index_component | char_component;
+                let left_index = (i + 1) as u16;
+                let right_index = (i + 1) as u16;
+
+                // create each resource
+                root_output.extend(u16::to_be_bytes(id));
+                root_output.extend(u16::to_be_bytes(0));
+                root_output.extend(u16::to_be_bytes(left_index));
+                root_output.extend(u16::to_be_bytes(right_index));
+                root_output.extend(i32::to_be_bytes(0)); // TODO: string_offset
+                root_output.extend(i32::to_be_bytes(data_offset));
+            }
+        }
+
+        let bres_size = bres_size_leafless as u32 + leaf_children_size as u32;
+        let leaf_count: usize = self.children.iter().map(|x| x.count_leaves()).sum();
+
+        // create bres header
+        output.extend("bres".chars().map(|x| x as u8));
+        output.extend(u16::to_be_bytes(self.endian));
+        output.extend(u16::to_be_bytes(self.version));
+        output.extend(u32::to_be_bytes(bres_size));
+        output.extend(u16::to_be_bytes(0x10)); // root_offset
+        output.extend(u16::to_be_bytes(leaf_count as u16 + 1)); // +1 for the root entry
+
+        // create bres root child header
+        output.extend("root".chars().map(|x| x as u8));
+        output.extend(i32::to_be_bytes(root_size as i32));
+
+        // create bres root child contents
+        output.extend(root_output);
+        while output.len() % 0x20 != 0 {
+            output.push(0x00);
+        }
+
+        // create bres leaf children
+        let mut size: u32 = 0;
+        for child_output in leaf_children_output {
+            size = if let Some(result) = size.checked_add(child_output.len() as u32) {
+                result
+            } else {
+                panic!("BRES over 2 ^ 32 bytes"); // TODO: Make this an Err(_)
+            };
+
+            output.extend(child_output);
+        }
+
+        output
+    }
+}
+
+fn most_significant_different_bit(b0: u8, b1: u8) -> u8 {
+    for i in 0..8 {
+        let bit = 0x80 >> i;
+        if b0 & bit != b1 & bit {
+            return 7 - i;
+        }
+    }
+    0
+}
+
+impl BresChild {
+    pub fn compile(&self, bres_offset: i32) -> Vec<u8> {
+        match &self.data {
+            BresChildData::Bres(children) => {
+                let mut output = vec![];
+
+                for child in children {
+                    output.extend(child.compile(bres_offset));
+                }
+
+                output
+            }
+            BresChildData::Mdl0(child) => child.compile(bres_offset),
+            BresChildData::Plt0(child) => child.compile(bres_offset),
+            _ => vec![],
+        }
+    }
+
+    // Calculates the size taken up by non-leaf data
+    // Doesnt include the root data
+    fn bres_size(&self) -> usize {
+        resources::RESOURCE_SIZE + // the resource entry
+            match &self.data {
+                // its pointing to a group of children
+                BresChildData::Bres (children) =>
+                    resources::RESOURCE_HEADER_SIZE
+                    + resources::RESOURCE_SIZE // dummy child
+                    + children.iter().map(|x| x.bres_size()).sum::<usize>(),
+
+                // its pointing to a leaf node
+                _ => 0,
+            }
+    }
+
+    fn count_leaves(&self) -> usize {
+        match &self.data {
+            BresChildData::Bres(children) => {
+                children.iter().map(|x| x.count_leaves()).sum::<usize>()
+            }
+            _ => 1,
+        }
+    }
+}
+
+const ROOT_HEADER_SIZE: usize = 0x8;
+#[derive(Clone, Debug)]
+pub struct BresChild {
+    pub name: String,
+    pub data: BresChildData,
+}
+
+#[derive(Clone, Debug)]
+pub enum BresChildData {
+    Chr0(Chr0),
+    Mdl0(Mdl0),
+    Plt0(Plt0),
+    Bres(Vec<BresChild>),
+    Unknown(String),
+}

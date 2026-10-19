@@ -1,0 +1,27 @@
+use crate::script_ast::variable_ast::{LongtermAccessBool, LongtermAccessInt, VariableAst};
+/// A script manually created by brawllib to initialize the state of the memory so that the subaction runs in the most useful way.
+/// e.g. enable hitboxes or prevent termination of the subaction
+use crate::script_ast::{Block, EventAst};
+
+pub fn init_hack_script(fighter_name: &str, subaction_name: &str) -> Block {
+    let events = match (fighter_name, subaction_name) {
+        ("Wolf", "LandingAirN") => vec![
+            EventAst::IntVariableSet {
+                value: 1,
+                variable: VariableAst::LongtermAccessInt(LongtermAccessInt::Address(0x43)),
+            }, // PM3.6
+            EventAst::BoolVariableSetTrue {
+                variable: VariableAst::LongtermAccessBool(LongtermAccessBool::Address(0x43)),
+            }, // P+
+        ],
+        ("PokeFushigisou", "LandingAirN") => vec![EventAst::BoolVariableSetTrue {
+            variable: VariableAst::LongtermAccessBool(LongtermAccessBool::Address(0x73)),
+        }],
+        ("Zelda", "LandingAirN") => vec![EventAst::BoolVariableSetTrue {
+            variable: VariableAst::LongtermAccessBool(LongtermAccessBool::Address(0x71)),
+        }],
+        _ => vec![],
+    };
+
+    Block { events }
+}

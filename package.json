@@ -1,0 +1,60 @@
+{
+  "name": "pplus-dojo",
+  "version": "0.2.5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/apply-study-selection.mjs && node scripts/build-study.mjs && tsc -b && vite build && node scripts/prepare-dist.mjs && node scripts/check-site.mjs dist",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:browser": "playwright test",
+    "package:windows": "node scripts/package-windows.mjs",
+    "package:web": "node scripts/package-web.mjs",
+    "package:source": "node scripts/package-source.mjs",
+    "validate:data": "node scripts/validate-data.mjs public/data",
+    "sandbox:build": "node scripts/build-sandbox.mjs",
+    "build:ui": "node scripts/rebuild-ui.mjs",
+    "study:build": "node scripts/build-study.mjs",
+    "study:select": "node scripts/apply-study-selection.mjs",
+    "desktop:start": "electron .",
+    "desktop:package": "node scripts/package-desktop.mjs",
+    "desktop:test": "node --test tests/desktop/*.test.cjs",
+    "desktop:verify-release": "node scripts/check-desktop-release.mjs",
+    "web:build": "node scripts/build-cloudflare.mjs",
+    "web:preview": "node scripts/serve-web.mjs",
+    "web:package": "node scripts/package-cloudflare.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/space-grotesk": "^5.2.10",
+    "electron-updater": "^6.8.9",
+    "fflate": "^0.8.2",
+    "firebase": "^13.0.0",
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.183.2",
+    "ts-fsrs": "^5.4.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.183.1",
+    "@vitejs/plugin-react": "^5.1.4",
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3",
+    "fake-indexeddb": "^6.2.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  },
+  "main": "desktop/main.cjs",
+  "description": "Offline Project+ reference and study app",
+  "author": "P+ Dojo",
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.6"
+  }
+}

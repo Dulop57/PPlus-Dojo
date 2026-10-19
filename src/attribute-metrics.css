@@ -1,0 +1,56 @@
+.attribute-reference-page .reference-toolbar { margin: 10px 0 22px; }
+.attribute-reference-page .metric-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  color: #a4c1be;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+.metric-picker-label { padding-left: 1px; }
+.metric-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.attribute-reference-page .metric-option {
+  display: inline-flex;
+  flex: 0 1 auto;
+  min-height: 36px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 11px;
+  border: 1px solid #31545a;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #10292f, #0b2027);
+  color: #bed6d2;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-align: left;
+  transition: background .15s, border-color .15s, color .15s, transform .15s;
+}
+.attribute-reference-page .metric-option svg { flex: 0 0 15px; color: #79c5bb; }
+.attribute-reference-page .metric-option:hover { transform: translateY(-1px); border-color: #62b6ad; color: #e3f6f2; }
+.attribute-reference-page .metric-option:focus-visible { outline-offset: 2px; }
+.attribute-reference-page .metric-option[aria-pressed=true] {
+  border-color: #50eadb;
+  background: linear-gradient(135deg, #145156, #10373f);
+  color: #dffff9;
+  box-shadow: inset 0 0 0 1px #50eadb24, 0 0 12px #50eadb12;
+}
+.attribute-reference-page .metric-option[aria-pressed=true] svg { color: #69f0df; }
+.attribute-reference-page .metric-option[data-family=weight] svg { color: #85d3cb; }
+.attribute-reference-page .metric-option[data-family=air] svg { color: #84d6ee; }
+.attribute-reference-page .metric-option[data-family=jump] svg { color: #bdabff; }
+.attribute-reference-page .metric-option[data-family=timing] svg { color: #e0c47f; }
+.attribute-reference-page .metric-option[data-family=movement] svg { color: #91d39d; }
+@media (max-width: 600px) {
+  .attribute-reference-page .reference-toolbar { margin: 10px 0 18px; }
+  .metric-options { gap: 6px; }
+  .attribute-reference-page .metric-option { min-height: 34px; gap: 7px; padding: 6px 9px; font-size: 10px; }
+}
